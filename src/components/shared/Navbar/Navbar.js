@@ -11,8 +11,6 @@ const Navbar = () => {
                 
                 <div id="navbarCollapse" className="collapse navbar-collapse justify-content-start">
                     <div className="navbar-nav">
-                        <a href="#" className="nav-item nav-link">Início</a>
-                        <a href="#" className="nav-item nav-link">Sobre</a>			
                         <div className="nav-item dropdown">
                             <a href="#" data-toggle="dropdown" className="nav-item nav-link dropdown-toggle">Produtos</a>
                             <div className="dropdown-menu">					
@@ -22,7 +20,7 @@ const Navbar = () => {
                                 <a href="#" className="dropdown-item">Produtos 4</a>
                             </div>
                         </div>
-                        <div className="nav-item dropdown">
+                        {/* <div className="nav-item dropdown">
                             <a href="#" data-toggle="dropdown" className="nav-item nav-link dropdown-toggle">Serviços</a>
                             <div className="dropdown-menu">					
                                 <a href="#" className="dropdown-item">Serviços 1</a>
@@ -30,20 +28,11 @@ const Navbar = () => {
                                 <a href="#" className="dropdown-item">Serviços 3</a>
                                 <a href="#" className="dropdown-item">Serviços 4</a>
                             </div>
-                        </div>
+                        </div> */}
                         <a href="#" className="nav-item nav-link">Aprenda Mais</a>
-                        <a href="#" className="nav-item nav-link">Contato</a>
+                        
                     </div>
-                    <form className="navbar-form form-inline">
-                        <div className="input-group search-box">								
-                            <input type="text" id="search" className="form-control" placeholder="Pesquise..."/>
-                            <div className="input-group-append">
-                                <span className="input-group-text">
-                                    <i className="material-icons">&#xE8B6;</i>
-                                </span>
-                            </div>
-                        </div>
-                    </form>
+                    
                     <div className="navbar-nav ml-auto action-buttons">
                         <div className="nav-item dropdown">
                             <a href="#" data-toggle="dropdown" className="nav-link dropdown-toggle mr-4">Login</a>
@@ -52,7 +41,6 @@ const Navbar = () => {
                                     <p className="hint-text">Entre com sua conta de mídia social</p>
                                     <div className="form-group social-btn clearfix">
                                         <a href="#" className="btn btn-secondary facebook-btn float-left"><i className="fa fa-facebook"></i> Facebook</a>
-                                        <a href="#" className="btn btn-secondary twitter-btn float-right"><i className="fa fa-twitter"></i> Twitter</a>
                                     </div>
                                     <div className="or-seperator"><b>ou</b></div>
                                     <div className="form-group">
