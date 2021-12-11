@@ -13,7 +13,7 @@
 
 .background-img{
   background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png");
-height: 400px;
+  height: 400px;
   width: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,6 +138,30 @@ height: 400px;
   transform-origin: right;
     
   }
-  
-  
 } 
+
+.padding {
+  padding: 0.8rem !important
+}
+
+.body {
+  background-color: #f8fafe
+}
+
+.search{
+  margin: 0 auto; 
+}
+
+.btn:hover {
+  color: #fff
+}
+
+.input-text:focus {
+  box-shadow: 0px 0px 0px;
+  border-color: #f8c146;
+  outline: 0px
+}
+
+.form-control {
+  border: 1px solid #f8c146
+}
