@@ -1,18 +1,24 @@
 import React from 'react';
 import './Cadastros.css';
-import Cadastro from '../../assets/cadastro.png';
+import Cadastro from '../../assets/cadastropj.png';
 
-const CadastroUser = () => {
+const CadastroVendedor = () => {
     return (
         <>
             <div class="registration-form">
                 <form>
                     <div className="form-group"> 
-                        <img className="imgcad" src= { Cadastro } />
+                        <img className="imgcad2" src= { Cadastro } />
                     </div>
                     
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="username" placeholder="Usuário"/>
+                        <input type="text" class="form-control item" id="nomeCompleto" placeholder="Nome Completo"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="razaoSocial" placeholder="Razão Social"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="nomeFantasia" placeholder="Nome Fantasia"/>
                     </div>
                     <div class="form-group">
                         <input type="password" class="form-control item" id="password" placeholder="Senha"/>
@@ -28,7 +34,7 @@ const CadastroUser = () => {
                         <input type="text" class="form-control item" id="birth-date" placeholder="Data de Nascimento"/>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="CPF" placeholder="CPF"/>
+                        <input type="text" class="form-control item" id="CNPJ" placeholder="CNPJ"/>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress">Endereço</label>
@@ -59,16 +65,11 @@ const CadastroUser = () => {
                         <button type="button" class="btn btn-block create-account">Criar Conta</button>
                     </div>
                 </form>
-                <div class="social-media">
-                    <h5>Cadastre-se com sua mídia social</h5>
-                    <div class="social-icons">
-                            <a href="#"><i class="icon-social-google" title="Google"></i></a>
-                    </div>
-                </div>
+                
             </div>
                 
         </>
     )
 }
 
-export default CadastroUser;
+export default CadastroVendedor;
