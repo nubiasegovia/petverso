@@ -7,6 +7,7 @@ import Home from './components/pages/Home/Home';
 import Cadastro from './components/pages/Cadastros/HomeCadastro';
 import CadastroUser from './components/pages/Cadastros/Usuario';
 import CadastroVendedor from './components/pages/Cadastros/Vendedor';
+import ViewOneProduct from './components/pages/Products/ViewOneProduct';
 
 
 
@@ -19,6 +20,7 @@ const App = () =>{
         <Route path="/cadastro" element={<Cadastro/>} />
         <Route path="/cadastro/pf" element={<CadastroUser/>} />
         <Route path="/cadastro/pj" element={<CadastroVendedor/>} />
+        <Route path="/product" element={<ViewOneProduct />} />
       </Routes>
       <Footer />
     </div>
