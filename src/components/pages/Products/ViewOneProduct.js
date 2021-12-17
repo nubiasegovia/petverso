@@ -38,7 +38,7 @@ const Product = () => {
             <p>Vendido e entregue por NomeDaEmpresa</p>
           </div>
           <div className="description">
-            <p>Breve descrição do produto, com no máximo três ou quatro linhas. Allways wanting food ignore the squirrels, you'll never catch them anyway reaches under door into adjacent room when in doubt, wash yet naughty running cat.</p>
+            <p>Breve descrição do produto. Allways wanting food ignore the squirrels, you'll never catch them anyway reaches under door into adjacent room when in doubt, wash yet naughty running cat. Allways wanting food ignore the squirrels.</p>
           </div>
         </div>
     </div>
