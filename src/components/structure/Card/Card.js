@@ -15,16 +15,16 @@ function Card(props) {
             <div className="card-wrapper">
                 <div className="card-itens" onClick={goToProductPage}>
                     <div className="product-img">
-                        <img src={props.image} alt={props.title} />
+                        <img src={props.image} alt={props.nome} />
                     </div>
                     <div className="product-title">
-                        {props.title}
+                        {props.nome}
                     </div>
                     <div className="product-company">
                         {props.company}
                     </div>
                     <div className="product-price">
-                        {'R$ ' + props.price}
+                        {'R$ ' + props.preco}
                     </div>
 
                 </div>
