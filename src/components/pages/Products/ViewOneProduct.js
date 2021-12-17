@@ -1,4 +1,4 @@
-import "./Products.css";
+import "./ViewOneProduct.css";
 import Arranhador1 from "../../assets/arranhador1.jpg";
 import Arranhador2 from "../../assets/arranhador2.jpg";
 
@@ -33,7 +33,13 @@ const Product = () => {
           </div>
         </div>
         <div className="infos-wrapper">
-          <p>Teste</p>
+          <h3>Nome do produto</h3>
+          <div className="company-info">
+            <p>Vendido e entregue por NomeDaEmpresa</p>
+          </div>
+          <div className="description">
+            <p>Breve descrição do produto, com no máximo três ou quatro linhas. Allways wanting food ignore the squirrels, you'll never catch them anyway reaches under door into adjacent room when in doubt, wash yet naughty running cat.</p>
+          </div>
         </div>
     </div>
 
