@@ -14,7 +14,9 @@ function Card(props) {
         <div className="container">
             <div className="card-wrapper">
                 <div className="card-itens" onClick={goToProductPage}>
-                    <img src={props.image} alt={props.title} />
+                    <div className="product-img">
+                        <img src={props.image} alt={props.title} />
+                    </div>
                     <div className="product-title">
                         {props.title}
                     </div>
