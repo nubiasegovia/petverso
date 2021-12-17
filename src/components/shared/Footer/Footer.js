@@ -1,15 +1,8 @@
 import React from 'react';
-import Gatinho4 from '../../assets/gatinho4.png';
-import DogRecord from '../../assets/recorde.png';
-import Insta1 from '../../assets/insta1.jpg';
-import Insta2 from '../../assets/insta2.jpg';
-import Insta3 from '../../assets/insta3.jpg';
-import Insta4 from '../../assets/insta4.jpg';
-import Insta5 from '../../assets/insta5.jpg';
-import Insta6 from '../../assets/insta6.jpg';
 
-import * as mdb from 'mdb-ui-kit'; 
-import { Input } from 'mdb-ui-kit'; 
+
+/* import * as mdb from 'mdb-ui-kit'; 
+import { Input } from 'mdb-ui-kit';  */
 
 
 const Footer = () => {
