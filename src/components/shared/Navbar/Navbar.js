@@ -8,7 +8,7 @@ const Navbar = () => {
     return(
         <>
            <div className="bar">
-                <img className="logo-topo" src={PetLogo}/>
+                <a target="_blank" href="/"> <img  className="logo-topo" src={PetLogo}/></a>
                 {/* <a href="/"  className="brand">Pet<b>Verso</b></a>   */}
                 <div className="menus">
                     <a target="_blank" href="#"className='menu1'> Produtos </a>
