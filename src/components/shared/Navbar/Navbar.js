@@ -8,17 +8,15 @@ const Navbar = () => {
     return(
         <>
            <div className="bar">
-                <a target="_blank" href="/"> <img  className="logo-topo" src={PetLogo}/></a>
+                <a href="/"> <img  className="logo-topo" src={PetLogo}/></a>
                 {/* <a href="/"  className="brand">Pet<b>Verso</b></a>   */}
                 <div className="menus">
-                    <a target="_blank" href="#"className='menu1'> Produtos </a>
-                    <a target="_blank" href="#"className='menu2'> Nossa Iniciativa </a>
+                    <a href="/products" className='menu1'> Produtos </a>
+                    <a href="#"className='menu2'> Nossa Iniciativa </a>
                     <a target="_blank" href="#"className='menu3'> PetDicas </a>
-                    <a target="_blank" href="/Login"><button className='btn-topo'>Login</button></a>
+                    <a href="/Login"><button className='btn-topo'>Login</button></a>
                     
                 </div>    
-                
-                
             </div>
         </>
     )
