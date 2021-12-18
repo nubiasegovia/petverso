@@ -101,8 +101,15 @@ body{
     width: 400px;
     margin: 0px 0px 0px 30px;
 }
+
 .imgcad2{
    
     width: 400px;
     margin: 0px 0px 0px 30px;
 }
+ 
+ .social-icons:hover{
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+	opacity: 0.8;
+ }
