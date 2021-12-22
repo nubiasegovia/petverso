@@ -122,3 +122,11 @@ body{
     row-gap: 30px;
     margin: 0px 0px 30px 25px;
  }
+
+ .imginit{
+    width: 30px;
+}
+ .titulo{
+     size: 50px;
+     color: brown;
+ }

@@ -10,6 +10,7 @@ import CadastroVendedor from './components/pages/Cadastros/Vendedor';
 import Login from './components/pages/Login/Login';
 import ViewOneProduct from './components/pages/Products/ViewOneProduct';
 import CadastroProduto from './components/pages/Cadastros/Produtos';
+import Iniciativa from './components/pages/Iniciativa/Iniciativa';
 
 
 
@@ -26,6 +27,7 @@ const App = () =>{
         <Route path="/cadastro/pj" element={<CadastroVendedor/>} />
         <Route path="/cadastro/product" element={<CadastroProduto/>} />
         <Route path="/product" element={<ViewOneProduct />} />
+        <Route path="/iniciativa" element={<Iniciativa/>} />
       </Routes>
       <Footer />
     </div>
