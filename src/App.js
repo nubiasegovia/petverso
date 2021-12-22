@@ -9,6 +9,7 @@ import CadastroUser from './components/pages/Cadastros/Usuario';
 import CadastroVendedor from './components/pages/Cadastros/Vendedor';
 import Login from './components/pages/Login/Login';
 import ViewOneProduct from './components/pages/Products/ViewOneProduct';
+import CadastroProduto from './components/pages/Cadastros/Produtos';
 
 
 
@@ -23,6 +24,7 @@ const App = () =>{
         <Route path="/cadastro" element={<Cadastro/>} />
         <Route path="/cadastro/pf" element={<CadastroUser/>} />
         <Route path="/cadastro/pj" element={<CadastroVendedor/>} />
+        <Route path="/cadastro/product" element={<CadastroProduto/>} />
         <Route path="/product" element={<ViewOneProduct />} />
       </Routes>
       <Footer />

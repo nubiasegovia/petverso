@@ -1,18 +1,11 @@
 import React from 'react';
 
-
-/* import * as mdb from 'mdb-ui-kit'; 
-import { Input } from 'mdb-ui-kit';  */
-
-
 const Footer = () => {
     return (
     <>
         <div>
             <footer class="text-center text-lg-start bg-light text-muted">
                 <section class="">
-                    <br />
-                    <br />
                     <div class="container text-center text-md-start mt-1">
                         <div class="row">
                             <div class="col-md-3 col-lg-1 col-xl-4 mx-auto mb-1">
