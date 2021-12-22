@@ -23,35 +23,35 @@ const CadastroProduto = () => {
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1"/>
                             <GiHummingbird />
-                            <label class="form-check-label" for="inlineCheckbox1">Aves</label>
+                            <label class="form-check-label" for="inlineCheck1">Aves</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1"/>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="opcao2"/>
                             <SiDatadog />
                             <label class="form-check-label" for="inlineCheckbox1"> Cachorro</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1"/>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="opcao3"/>
                             <GiRabbit />
                             <label class="form-check-label" for="inlineCheckbox1"> Coelho</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1"/>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="opcao4"/>
                             <FaCat />
                             <label class="form-check-label" for="inlineCheckbox1"> Gato</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1"/>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="opcao5"/>
                             <IoFish />
                             <label class="form-check-label" for="inlineCheckbox1"> Peixe</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1"/>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="opcao6"/>
                             <GiSandSnake />
                             <label class="form-check-label" for="inlineCheckbox1"> Réptil</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1"/>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="opcao7"/>
                             <GiSeatedMouse />
                             <label class="form-check-label" for="inlineCheckbox1"> Roedor</label>
                         </div>
