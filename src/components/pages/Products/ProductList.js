@@ -1,6 +1,8 @@
 import Card from "../../structure/Card/Card";
 import axios from "axios";
 import { useEffect, useState } from 'react';
+import './ProductList.css';
+
 
 function ProductList() {
     const [products, setProducts] = useState([]);
@@ -30,6 +32,7 @@ function ProductList() {
                     nome={product.nome}
                     company={product.company}
                     preco={product.preco}
+                    imgUrl={product.imgUrl}
                     />
                 ))
             }

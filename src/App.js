@@ -7,8 +7,8 @@ import Home from './components/pages/Home/Home';
 import Cadastro from './components/pages/Cadastros/HomeCadastro';
 import CadastroUser from './components/pages/Cadastros/Usuario';
 import CadastroVendedor from './components/pages/Cadastros/Vendedor';
-import ViewOneProduct from './components/pages/Products/ViewOneProduct';
 import ProductList from './components/pages/Products/ProductList';
+import ViewOneProduct from './components/pages/Products/ViewOneProduct';
 
 
 
@@ -22,7 +22,7 @@ const App = () =>{
         <Route path="/cadastro/pf" element={<CadastroUser/>} />
         <Route path="/cadastro/pj" element={<CadastroVendedor/>} />
         <Route path="/product" element={<ViewOneProduct />} />
-        <Route path="/products/all" element={<ProductList />} />
+        <Route path="/product/all" element={<ProductList />} />
       </Routes>
       <Footer />
     </div>
