@@ -25,23 +25,7 @@ function Card(props) {
                             <a href="#"><FaCartPlus /></a>
                             </IconContext.Provider>
                         </div>
-                        
-                        
                     </div>
-
-                    {/* <div className="product-img">
-                        <img src={props.imgUrl} alt={props.nome} />
-                    </div>
-                    <div className="product-title">
-                        {props.nome}
-                    </div>
-                    <div className="product-company">
-                        {props.company}
-                    </div>
-                    <div className="product-price">
-                        {'R$ ' + props.preco}
-                    </div> */}
-
                 </div>
     )
 }
