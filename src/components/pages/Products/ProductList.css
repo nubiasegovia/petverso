@@ -1,8 +1,5 @@
 .list-container {
-    display: flex;    
-    flex-wrap: wrap;
-    align-content: center;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
+    padding-top: 20px;
 }

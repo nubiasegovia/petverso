@@ -27,7 +27,7 @@ const Product = () => {
   }, [mounted]);
 
   return (
-    <div className="container">
+    <div className="container-product">
       <div className="product-container">
         <div className="imgs-wrapper">
           <div className="image-container">

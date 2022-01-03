@@ -12,9 +12,6 @@ function Card(props) {
     }
 
     return (
-
-        <div className="container">
-            <div className="card-wrapper">
                 <div className="card-itens" onClick={goToProductPage}>
                     <div className="product">
                         <img src={props.imgUrl} alt={props.nome} />
@@ -46,8 +43,6 @@ function Card(props) {
                     </div> */}
 
                 </div>
-            </div>
-        </div>
     )
 }
 
