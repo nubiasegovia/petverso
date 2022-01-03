@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import "./Card.css";
+import "./Card.css"; 
+import { IconContext } from "react-icons";
+import { FaCartPlus } from "react-icons/fa";
 
 function Card(props) {
 
@@ -21,7 +23,13 @@ function Card(props) {
                             <h5>{props.nome}</h5>
                             <h4>R$ {props.preco}</h4>
                         </div>
-                        <a href="#"><i className="fal fa-shopping-cart"></i></a>
+                        <div className="cart">
+                            <IconContext.Provider value={{ color: "#03AEA2", size:"1.4em", className: "cart-icon"}}>
+                            <a href="#"><FaCartPlus /></a>
+                            </IconContext.Provider>
+                        </div>
+                        
+                        
                     </div>
 
                     {/* <div className="product-img">
