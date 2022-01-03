@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Footer = () => {
     return (
     <>
@@ -74,7 +75,7 @@ const Footer = () => {
                         <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
                     </div>
                     <div class="text-center p-1">
-                        <p class="copyright"> <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="#" target="_blank">PetVerso</a>
+                        <p class="copyright"> <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="/">PetVerso</a>
                         </p>
                     </div>
                 </div>

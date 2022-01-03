@@ -1,0 +1,45 @@
+.container {
+    height: 100vh;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.images-container{ 
+    display: flex;
+    flex-direction: row;
+}
+
+.imgs-wrapper, .infos-wrapper {
+    width: 50%;
+}
+
+.selected-img {
+    width: 100%;
+}
+
+.imgs-col {
+    padding: 0;
+
+}
+.imgs-col img {
+    width: 100px;
+    height: 100px;
+    margin: 3%;
+}
+
+.img img {
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.infos-wrapper {
+    text-align: justify;
+}
+.company-info{
+    font-size: 0.6em;
+    color: grey;
+}
