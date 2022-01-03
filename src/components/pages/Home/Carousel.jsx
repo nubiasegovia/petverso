@@ -7,6 +7,8 @@ import {
   MDBCarouselCaption
 } from 'mdb-react-ui-kit';
 import Slide1 from '../../assets/petversoslide1.gif';
+import Alimentar from '../../assets/alimentar.png';
+import Beleza from '../../assets/beleza.png';
 
 export default function Carousel() {
   return (
@@ -15,23 +17,20 @@ export default function Carousel() {
         <MDBCarouselItem className='active'>
           <MDBCarouselElement src={ Slide1 } alt='...' />
           <MDBCarouselCaption>
-            {/* <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+            
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem>
-          <MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg' alt='...' />
+          <MDBCarouselElement src={ Alimentar } alt='...' />
           <MDBCarouselCaption>
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            
           </MDBCarouselCaption>
         </MDBCarouselItem>
 
         <MDBCarouselItem>
-          <MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(40).jpg' alt='...' />
+          <MDBCarouselElement src={ Beleza } alt='...' />
           <MDBCarouselCaption>
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            
           </MDBCarouselCaption>
         </MDBCarouselItem>
       </MDBCarouselInner>
