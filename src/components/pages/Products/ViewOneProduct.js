@@ -1,44 +1,53 @@
 import "./ViewOneProduct.css";
-import Arranhador1 from "../../assets/arranhador1.jpg";
-import Arranhador2 from "../../assets/arranhador2.jpg";
+import { useLocation } from "react-router-dom";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 
 const Product = () => {
-  /* const Test = {
-        titulo: "",
-        empresa: "",
-    } */
+  const state = useLocation();
+  const id = state.state;
+
+  const [product, setProduct] = useState([]);
+  const [mounted, setMounted] = useState(false);
+
+  const getData = async () => {
+    await axios.get(`/product/${id}`)
+    .then((response) => {
+      if (mounted) {
+        setProduct(response.data);
+      }
+    });
+  };
+
+  useEffect(() => {
+    setMounted(true);
+    getData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mounted]);
 
   return (
     <div className="container">
       <div className="product-container">
         <div className="imgs-wrapper">
-          <div className="images-container">
-            <div className="imgs-col">
-              <div className="row1">
-                <img src={Arranhador1} alt="" />
-              </div>
-              <div className="row2">
-              <img src={Arranhador2} alt="" />
-              </div>
-              <div className="row3">
-                <img src={Arranhador2} alt="" />
-              </div>
-            </div>
+          <div className="image-container">
             <div className="col img">
               <div className="row selected-img">
-                <img src={Arranhador1} alt="" />
+                <img src={product.imgUrl} alt="" />
               </div>
             </div>
           </div>
         </div>
         <div className="infos-wrapper">
-          <h3>Nome do produto</h3>
+          <h3>{product.nome}</h3>
           <div className="company-info">
-            <p>Vendido e entregue por NomeDaEmpresa</p>
+            <p>Vendido e entregue por {/* {company.nome} */}</p>
           </div>
           <div className="description">
-            <p>Breve descrição do produto. Allways wanting food ignore the squirrels, you'll never catch them anyway reaches under door into adjacent room when in doubt, wash yet naughty running cat. Allways wanting food ignore the squirrels.</p>
+            <p>{product.descricao}</p>
+          </div>
+          <div className="price">
+            <p>R$ {product.preco}</p>
           </div>
         </div>
     </div>
