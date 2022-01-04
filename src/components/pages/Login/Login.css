@@ -2,15 +2,9 @@ body{
     background-color: #dee9ff;
 }
 
-/* .registration-form{
-	padding: 0px 0;
-} */
-
 .registration-form form{
     background-color: #fff;
-    
     margin: auto;
-    /* padding: 50px 70px; */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
