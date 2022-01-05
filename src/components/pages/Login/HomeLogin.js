@@ -17,11 +17,11 @@ const Cadastro = () => {
                             <div class="content">
                             <h2>PetVerso </h2>
                             <p><a>O que você procura... Quem você procura...Pelo bem de quem você ama!</a></p>
-                            <a target="_blank" href="/cadastro/pf"><button type="button" className="btn btn-outline-warning btn-rounded" data-mdb-ripple-color="dark"> Comprador </button></a>
+                            <a target="_blank" href="/Login/User"><button type="button" className="btn btn-outline-warning btn-rounded" data-mdb-ripple-color="dark"> Comprador </button></a>
                             <br />
                             <br />
                             
-                            <a target="_blank" href="/cadastro/pj"><button type="button" className="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark"> Vendedor </button></a>
+                            <a target="_blank" href="/Login/Seller"><button type="button" className="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark"> Vendedor </button></a>
                             </div>
                             
                         </div>

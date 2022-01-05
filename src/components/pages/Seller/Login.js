@@ -46,7 +46,7 @@ const Login = () => {
                        <a href="#" class="forgot">Esqueceu Sua Senha?</a>
                     </div>
                     <div class="form-group">
-                       <a href="/cadastro" class="forgot">Cadastre-se</a>
+                       <a href="/cadastro/pj" class="forgot">Cadastre-se</a>
                     </div>
                 </form>
                 <div class="social-media">
