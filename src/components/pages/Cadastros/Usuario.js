@@ -63,7 +63,7 @@ const CadastroUser = () => {
                         <input type="text" require onChange={event => setEmail(event.target.value)} class="form-control item" id="email" placeholder="E-mail"/>
                     </div>
                     <div class="form-group">
-                        <input type="text" require onChange={event => setPhone(event.target.value)} class="form-control item" id="phone-number" placeholder="Nº de Telefone/Whatsapp"/>
+                        <input type="text" require onChange={event => setPhone(event.target.value)} class="form-control item" id="phone" placeholder="Nº de Telefone/Whatsapp"/>
                     </div>
                     
                     <div class="form-group">
@@ -91,7 +91,7 @@ const CadastroUser = () => {
                         </div>
                         <div class="form-group col-md-2">
                         <label for="inputCEP">CEP</label>
-                        <input type="text" require onChange={event => setAddress2(event.target.value)}class="form-control" id="inputCEP"/>
+                        <input type="text" require onChange={event => setCep(event.target.value)}class="form-control" id="inputCEP"/>
                         </div>
                     </div>
                     <div class="form-group">
