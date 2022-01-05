@@ -4,11 +4,12 @@ import { Routes ,Route } from 'react-router-dom';
 import Navbar from './components/shared/Navbar/Navbar';
 import Footer from './components/shared/Footer/Footer';
 import Home from './components/pages/Home/Home';
-import Cadastro from './components/pages/Cadastros/HomeCadastro';
-import CadastroUser from './components/pages/Cadastros/Usuario';
-import CadastroVendedor from './components/pages/Cadastros/Vendedor';
+import CadastroUser from './components/pages/Users/Usuario';
+import CadastroVendedor from './components/pages/Seller/Vendedor';
 import ProductList from './components/pages/ProductList/ProductList';
-import Login from './components/pages/Login/Login';
+import HomeLogin from './components/pages/Login/HomeLogin';
+import LoginUser from './components/pages/Users/Login';
+import LoginSeller from './components/pages/Seller/Login';
 import ViewOneProduct from './components/pages/ViewOneProduct/ViewOneProduct';
 import CadastroProduto from './components/pages/Cadastros/Produtos';
 import Iniciativa from './components/pages/Iniciativa/Iniciativa';
@@ -22,8 +23,9 @@ const App = () =>{
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/Login" element={<Login/>} />
-        <Route path="/cadastro" element={<Cadastro/>} />
+        <Route path="/HomeLogin" element={<HomeLogin/>} />
+        <Route path="/Login/User" element={<LoginUser/>} />
+        <Route path="/Login/Seller" element={<LoginSeller/>} />
         <Route path="/cadastro/pf" element={<CadastroUser/>} />
         <Route path="/cadastro/pj" element={<CadastroVendedor/>} />
         <Route path="/cadastro/product" element={<CadastroProduto/>} />
