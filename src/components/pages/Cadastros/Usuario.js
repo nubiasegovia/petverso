@@ -51,34 +51,34 @@ const CadastroUser = () => {
                         <input type="text" require onChange={event => setNome(event.target.value)}  class="form-control item" id="nome" placeholder="Nome Completo"/>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="username" placeholder="Usuário"/>
+                        <input type="text" require onChange={event => setUsername(event.target.value)} class="form-control item" id="username" placeholder="Usuário"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control item" id="password" placeholder="Senha"/>
+                        <input type="password" require onChange={event => setPassword(event.target.value)} class="form-control item" id="password" placeholder="Senha"/>
                     </div>  
                     <div class="form-group">
-                        <input type="password" class="form-control item" id="passwordConfirmation" placeholder="Confirmação de Senha"/>
+                        <input type="password" require onChange={event => setPasswordConfirmation(event.target.value)} class="form-control item" id="passwordConfirmation" placeholder="Confirmação de Senha"/>
                     </div>                  
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="email" placeholder="E-mail"/>
+                        <input type="text" require onChange={event => setEmail(event.target.value)} class="form-control item" id="email" placeholder="E-mail"/>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="phone-number" placeholder="Nº de Telefone/Whatsapp"/>
+                        <input type="text" require onChange={event => setPhone(event.target.value)} class="form-control item" id="phone-number" placeholder="Nº de Telefone/Whatsapp"/>
                     </div>
                     
                     <div class="form-group">
                         <input type="text" class="form-control item" id="birth-date" placeholder="Data de Nascimento"/>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="CPF" placeholder="CPF"/>
+                        <input type="text" require onChange={event => setCpf(event.target.value)} class="form-control item" id="CPF" placeholder="CPF"/>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress">Endereço</label>
-                        <input type="text" class="form-control" id="address1" placeholder="Dog Street, nº 0"/>
+                        <input type="text" require onChange={event => setAddress1(event.target.value)} class="form-control" id="address1" placeholder="Dog Street, nº 0"/>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Complemento</label>
-                        <input type="text" class="form-control" id="address2" placeholder="Casa, Apto, etc."/>
+                        <input type="text" require onChange={event => setAddress2(event.target.value)} class="form-control" id="address2" placeholder="Casa, Apto, etc."/>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -91,11 +91,11 @@ const CadastroUser = () => {
                         </div>
                         <div class="form-group col-md-2">
                         <label for="inputCEP">CEP</label>
-                        <input type="text" class="form-control" id="inputCEP"/>
+                        <input type="text" require onChange={event => setAddress2(event.target.value)}class="form-control" id="inputCEP"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="button" class="btn btn-block create-account">Criar Conta</button>
+                        <button type="submit" value='Enviar' class="btn btn-block create-account">Criar Conta</button>
                     </div>
                 </form>
                 <div class="social-media">
