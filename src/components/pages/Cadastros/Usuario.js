@@ -3,6 +3,7 @@ import './Cadastros.css';
 import Cadastro from '../../assets/cadastro.png';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Mask from "@react-br-forms/cpf-cnpj-mask";
 
 const CadastroUser = () => {
 
@@ -11,11 +12,15 @@ const CadastroUser = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [passwordConfirmation, setPasswordConfirmation] = useState('')
+    const [birthday, setBirthday] = useState('')
     const [cep, setCep] = useState('')
     const [cpf, setCpf] = useState('')
     const [phone, setPhone] = useState('')
+    const [city, setCity] = useState('')
+    const [state, setState] = useState('')
     const [address1, setAddress1] = useState('')
     const [address2, setAddress2] = useState('')
+    
     
 
     const handleSubmit = event =>{
@@ -31,7 +36,10 @@ const CadastroUser = () => {
             cpf: cpf,
             phone: phone,
             address1: address1,
-            address2: address2
+            address2: address2,
+            city: city,
+            state: state,
+            birthday:birthday
         }
 
         axios.post('/user/registrar', user)
@@ -67,7 +75,7 @@ const CadastroUser = () => {
                     </div>
                     
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="birth-date" placeholder="Data de Nascimento"/>
+                        <input type="text"  require onChange={event => setBirthday(event.target.value)}class="form-control item" id="birth-date" placeholder="Data de Nascimento"/>
                     </div>
                     <div class="form-group">
                         <input type="text" require onChange={event => setCpf(event.target.value)} class="form-control item" id="CPF" placeholder="CPF"/>
@@ -83,13 +91,13 @@ const CadastroUser = () => {
                     <div class="form-row">
                         <div class="form-group col-md-6">
                         <label for="inputCity">Cidade</label>
-                        <input type="text" class="form-control" id="inputCity"/>
+                        <input type="text"  require onChange={event => setCity(event.target.value)}class="form-control" id="inputCity"/>
                         </div>
                         <div class="form-group col-md-6">
                         <label for="inputCity">Estado</label>
-                        <input type="text" class="form-control" id="inputCity"/>
+                        <input type="text" require onChange={event => setState(event.target.value)}class="form-control" id="inputCity"/>
                         </div>
-                        <div class="form-group col-md-2">
+                        <div class="form-group col-md-4">
                         <label for="inputCEP">CEP</label>
                         <input type="text" require onChange={event => setCep(event.target.value)}class="form-control" id="inputCEP"/>
                         </div>
