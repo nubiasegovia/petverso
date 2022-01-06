@@ -1,6 +1,7 @@
 import React from 'react';
 import './Usuario.css';
 import Cadastro from '../../assets/cadastro.png';
+// eslint-disable-next-line
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -26,6 +27,7 @@ const CadastroUser = (props) => {
     const handleSubmit = async (event) =>{
         event.preventDefault();
 
+        // eslint-disable-next-line
         const data = {
             name: name,
             email: email,
@@ -42,11 +44,11 @@ const CadastroUser = (props) => {
             birthday:birthday
         }
 
-        /* const res = await axios.post('/user/registrar', data)
+        const res = await axios.post('/user/registrar', data)
             .then(res => {
                 console.log(res);
                 console.log(res.data);
-              }) */
+              })
     }
 
     return (
