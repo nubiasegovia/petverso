@@ -3,11 +3,15 @@ import './Login.css';
 import LogoLogin from '../../assets/Login.png';
 import axios from 'axios';
 import { useState } from 'react/cjs/react.development';
+import { useNavigate } from 'react-router-dom'
+
 
 const Login = () => {
 
     const[email, setEmail] = useState('')
     const[password, setPassword] = useState('');
+    const navigate = useNavigate();
+
 
     const handleSubmit = event =>{
         event.preventDefault();
@@ -17,11 +21,13 @@ const Login = () => {
             password: password
         }
 
-        axios.post(`/auth/login`, login)
+        axios.post(`/auth/login-com`, login)
         .then(response =>{
             const token = response.data.token;
             localStorage.setItem('token', token)
         })
+        navigate("/DashSeller");
+
     }
 
     return (
