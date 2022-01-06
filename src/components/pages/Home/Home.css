@@ -165,3 +165,32 @@
 .form-control {
   border: 1px solid #f8c146
 }
+
+.destaque{
+  position: relative;
+  text-align: center;
+  color: #888;
+  
+}
+
+.Sil{
+  max-width: 50px;
+  align-items: center;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.Sil2{
+  max-width: 1000px;
+  align-items: center;
+  margin-left: 220px;
+  margin-top: 20px;
+}
+
+.animal h4{
+  text-align: center;
+}
+
+.gifhome{
+  width: 100%;
+}
