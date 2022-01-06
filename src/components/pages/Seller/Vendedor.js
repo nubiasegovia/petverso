@@ -3,6 +3,8 @@ import './Vendedor.css';
 import Cadastro from '../../assets/cadastropj.png';
 import axios from 'axios';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
+
 
 const CadastroVendedor = () => {
 
@@ -20,6 +22,7 @@ const CadastroVendedor = () => {
     const [address1, setAddress1] = useState('')
     const [address2, setAddress2] = useState('')
     
+    const navigate = useNavigate();
 
     const handleSubmit = async (event) =>{
         event.preventDefault();
@@ -40,11 +43,14 @@ const CadastroVendedor = () => {
             address2: address2
         }
 
-        const res = await axios.post('/company/registrar', user)
-            .then(res => {
-                console.log(res);
-                console.log(res.data);
-            })
+        const response = await axios.post("/company/registrar", user).then((res) => {
+            console.log(res);
+            console.log(response.data);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+        navigate("/inciativa");
     }
 
     return (
