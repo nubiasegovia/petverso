@@ -6,8 +6,9 @@ import axios from 'axios';
 import { useState } from 'react';
 
 
-const CadastroUser = (props) => {
-    /* const history = props.history; */
+
+const CadastroUser = () => {
+    
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
