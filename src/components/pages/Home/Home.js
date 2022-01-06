@@ -26,7 +26,7 @@ const Home = () => {
                 <img className="Sil" src = {SilCat}/>
                 <br />
                 <img className="Sil2" src = {HomeText}/>
-                <br />
+                
                 <h5 className="destaque">Ajudando pequenas empresas e produtores a dar o suporte que todo tutor de pet precisa nessa incrivel jornada!</h5>
                 <br />
                 <br />
