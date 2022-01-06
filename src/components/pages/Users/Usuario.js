@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 const CadastroUser = (props) => {
-    const history = props.history;
+    /* const history = props.history; */
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -42,11 +42,11 @@ const CadastroUser = (props) => {
             birthday:birthday
         }
 
-        const res = await axios.post('/user/registrar', data)
+        /* const res = await axios.post('/user/registrar', data)
             .then(res => {
                 console.log(res);
                 console.log(res.data);
-              })
+              }) */
     }
 
     return (
