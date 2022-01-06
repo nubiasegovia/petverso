@@ -21,7 +21,7 @@ const CadastroVendedor = () => {
     const [address2, setAddress2] = useState('')
     
 
-    const handleSubmit = event =>{
+    const handleSubmit = async (event) =>{
         event.preventDefault();
 
         const user = {
@@ -40,8 +40,11 @@ const CadastroVendedor = () => {
             address2: address2
         }
 
-        axios.post('/company/registrar', user)
-        .then(response => console.log(response))
+        const res = await axios.post('/company/registrar', user)
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
     }
 
     return (
