@@ -30,8 +30,8 @@ function ProductList() {
                     <Card 
                     id={product.id}
                     nome={product.nome}
-                    company={product.company}
-                    preco={product.preco}
+                    company={product.companyID}
+                    preco={product.price}
                     imgUrl={product.imgUrl}
                     />
                 ))

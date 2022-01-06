@@ -33,11 +33,11 @@ const Product = () => {
         <img src={product.imgUrl}  width="100%" alt={product.nome} />
       </div>
       <div className="sproduct-details">
-        <h4>{product.nome}</h4>
-        <h6>Vendido e entregue por NomeEmpresa</h6>
-        <p>{product.descricao}</p>
+        <h4>{product.name}</h4>
+        <h6>Vendido e entregue por {product.companyID}</h6>
+        <p>{product.descrition}</p>
         <div className="wrapper-pi">
-          <h2>R$ {product.preco}</h2>
+          <h2>R$ {product.price}</h2>
           <input type="number" value="1" />  
         </div>
         <div className="wrapper-shopbtn">
