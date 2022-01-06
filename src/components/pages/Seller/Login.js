@@ -21,7 +21,7 @@ const Login = () => {
             password: password
         }
 
-        axios.post(`/auth/login-com`, login)
+        axios.post(`/auth/login-company`, login)
         .then(response =>{
             const token = response.data.token;
             localStorage.setItem('token', token)
