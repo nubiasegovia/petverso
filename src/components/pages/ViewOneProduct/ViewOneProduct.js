@@ -18,16 +18,16 @@ const Product = () => {
     .then((response) => {
       if (mounted) {
         setProduct(response.data);
+        console.log(response.data)
       }
     });
   };
-
+  
   const getCompany = async () => {
     await axios.get(`/company/${product.companyID}`)
     .then((response) =>{
-      if (mounted){
         setCompany(response.data)
-      }
+        console.log(response.data)
     })
   }
 
@@ -37,6 +37,7 @@ const Product = () => {
     getCompany();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mounted]);
+  console.log(company)
 
   return (
     <div className="single-product">
@@ -46,7 +47,7 @@ const Product = () => {
       <div className="sproduct-details">
         <h4>{product.name}</h4>
         <h6>Vendido e entregue por {company.corporateName}</h6>
-        <p>{product.descrition}</p>
+        <p>{product.description}</p>
         <div className="wrapper-pi">
           <h2>R$ {product.price}</h2>
           <input type="number" value="1" />  
