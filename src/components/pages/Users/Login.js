@@ -29,7 +29,7 @@ const Login = () => {
             <div class="registration-form">
                 <form onSubmit={handleSubmit}>
                     <div className="form-group"> 
-                        <img className="imglog" src= { LogoLogin } />
+                        <img className="imglog" alt="" src= { LogoLogin } />
                     </div>
                     
                     <div class="form-group">
@@ -43,7 +43,7 @@ const Login = () => {
                         <button type='submit' value='Entrar' class="btn btn-block create-account">Login</button>
                     </div>
                     <div class="form-group">
-                       <a href="#" class="forgot">Esqueceu Sua Senha?</a>
+                       <a href="/" class="forgot">Esqueceu Sua Senha?</a>
                     </div>
                     <div class="form-group">
                        <a href="/cadastro/pf" class="forgot">Cadastre-se</a>
@@ -52,7 +52,7 @@ const Login = () => {
                 <div class="social-media">
                     <h5>Cadastre-se com sua mídia social</h5>
                     <div class="social-icons">
-                            <a href="#"><i class="icon-social-google" title="Google"></i></a>
+                            <a href="/"><i class="icon-social-google" title="Google"></i></a>
                     </div>
                 </div>
             </div>

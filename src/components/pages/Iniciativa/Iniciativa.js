@@ -8,7 +8,7 @@ const Iniciativa = () => {
             <div >
                 <div className="topo">
                     <h4 className="titulo">Nossa Iniciativa PetVerso</h4>
-                    <img ClassName="imginit" src={ Iniciativa1 } />
+                    <img ClassName="imginit" alt="" src={ Iniciativa1 } />
                 </div>
             </div>
         </>

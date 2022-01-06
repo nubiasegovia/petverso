@@ -2,7 +2,7 @@ import React from 'react';
 import './Vendedor.css';
 import Cadastro from '../../assets/cadastropj.png';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const CadastroVendedor = () => {
 
@@ -49,7 +49,7 @@ const CadastroVendedor = () => {
             <div class="registration-form">
                 <form onSubmit={handleSubmit}>
                     <div className="form-group"> 
-                        <img className="imgcad2" src= { Cadastro } />
+                        <img className="imgcad2" alt="" src= { Cadastro } />
                     </div>
                     
                     <div class="form-group">

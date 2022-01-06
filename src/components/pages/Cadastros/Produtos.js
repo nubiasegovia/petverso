@@ -13,7 +13,7 @@ const CadastroProduto = () => {
             <div class="registration-form">
                 <form>
                     <div className="form-group"> 
-                        <img className="imgcad2" src= { CadastroProd } />
+                        <img className="imgcad2" alt="" src= { CadastroProd } />
                     </div>
                     
                     <div class="form-group">

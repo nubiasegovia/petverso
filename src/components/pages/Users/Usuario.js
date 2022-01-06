@@ -2,7 +2,7 @@ import React from 'react';
 import './Usuario.css';
 import Cadastro from '../../assets/cadastro.png';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 const CadastroUser = (props) => {
@@ -54,7 +54,7 @@ const CadastroUser = (props) => {
             <div class="registration-form">
                 <form onSubmit={handleSubmit}>
                     <div className="form-group"> 
-                        <img className="imgcad" src= { Cadastro } />
+                        <img className="imgcad" alt="" src= { Cadastro } />
                     </div>
                     <div class="form-group">
                         <input type="text" require onChange={event => setName(event.target.value)}  class="form-control item" id="name" placeholder="Nome Completo"/>
@@ -110,7 +110,7 @@ const CadastroUser = (props) => {
                 <div class="social-media">
                     <h5>Cadastre-se com sua mídia social</h5>
                     <div class="social-icons">
-                            <a href="#"><i class="icon-social-google" title="Google"></i></a>
+                            <a href="/"><i class="icon-social-google" title="Google"></i></a>
                     </div>
                 </div>
             </div>
