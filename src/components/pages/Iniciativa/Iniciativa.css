@@ -1,6 +1,30 @@
-.imginit1{
-    width: 300px;
+.destaque{
+    size: 50px;
+    position: relative;
+    text-align: center;
+    color: rgb(82, 80, 80);
+    margin-top: 20px;
+    
+  }
+
+.destaque2{
+    position: relative;
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+    
 }
- .titulo{
-     size: 50px;
- }
+
+.imginit{
+    position: relative;
+    text-align: center;
+    margin-left: 600px;
+    width:200px;
+}
+
+.parar{
+    text-align: center;
+    margin-left: 15px;
+}
+
+
