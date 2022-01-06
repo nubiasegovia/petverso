@@ -19,23 +19,6 @@ const Footer = () => {
                                 </p>
                             </div>
                         
-                            <div class="col-md-3 col-lg-1 col-xl-2 mx-auto mb-1">
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Produtos
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">Lorem ipsum</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Lorem ipsum</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Lorem ipsum</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Lorem ipsum</a>
-                                </p>
-                            </div>
                         
                             <div class="col-md-3 col-lg-1 col-xl-2 mx-auto mb-4">
                         
@@ -60,7 +43,7 @@ const Footer = () => {
                                 <p><i class="fas fa-home me-3"></i> Brasil</p>
                                 <p>
                                     <i class="fas fa-envelope me-3"></i>
-                                    info@exemplo.com
+                                    suporte@petverso.com
                                 </p>
                                 <p><i class="fas fa-phone me-3"></i> + 55 21 9 9999-9999</p>
                                 <p><i class="fas fa-print me-3"></i> + 55 21 9 9999-9999</p>
