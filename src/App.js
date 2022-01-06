@@ -13,6 +13,7 @@ import LoginSeller from './components/pages/Seller/Login';
 import ViewOneProduct from './components/pages/ViewOneProduct/ViewOneProduct';
 import CadastroProduto from './components/pages/Cadastros/Produtos';
 import Iniciativa from './components/pages/Iniciativa/Iniciativa';
+import DashboardSeller from './components/pages/Seller/Dashboard';
 
 
 
@@ -32,6 +33,7 @@ const App = () =>{
         <Route path="/product" element={<ViewOneProduct />} />
         <Route path="/products/all" element={<ProductList />} />
         <Route path="/iniciativa" element={<Iniciativa/>} />
+        <Route path="/DashSeller" element={<DashboardSeller/>} />
       </Routes>
       <Footer />
     </div>
