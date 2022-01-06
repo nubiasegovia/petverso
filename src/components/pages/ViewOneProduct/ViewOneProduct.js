@@ -10,6 +10,7 @@ const Product = () => {
   const id = state.state;
 
   const [product, setProduct] = useState([]);
+  const [company, setCompany] = useState([]);
   const [mounted, setMounted] = useState(false);
 
   const getData = async () => {
@@ -21,9 +22,19 @@ const Product = () => {
     });
   };
 
+  const getCompany = async () => {
+    await axios.get(`/company/${product.companyID}`)
+    .then((response) =>{
+      if (mounted){
+        setCompany(response.data)
+      }
+    })
+  }
+
   useEffect(() => {
     setMounted(true);
     getData();
+    getCompany();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mounted]);
 
@@ -34,7 +45,7 @@ const Product = () => {
       </div>
       <div className="sproduct-details">
         <h4>{product.name}</h4>
-        <h6>Vendido e entregue por {product.companyID}</h6>
+        <h6>Vendido e entregue por {company.corporateName}</h6>
         <p>{product.descrition}</p>
         <div className="wrapper-pi">
           <h2>R$ {product.price}</h2>
