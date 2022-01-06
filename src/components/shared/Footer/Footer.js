@@ -14,8 +14,7 @@ const Footer = () => {
                                     <i class="fas fa-paw"></i> <i class="fas fa-heart"></i>  PetVerso  <i class="fas fa-heart"></i> <i class="fas fa-paw"></i>
                                 </h6>
                                 <p>
-                                    Here you can use rows and columns to organize your footer content. Lorem ipsum
-                                    dolor sit amet, consectetur adipisicing elit.
+                                Um universo de produtos para o seu melhor amigo. Ajudando pequenas empresas e produtores a dar o suporte que todo tutor de pet precisa nessa incrivel jornada!
                                 </p>
                             </div>
                         
