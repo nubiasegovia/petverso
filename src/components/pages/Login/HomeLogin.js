@@ -16,7 +16,7 @@ const Cadastro = () => {
                             <span></span>
                             <div class="content">
                             <h2>PetVerso </h2>
-                            <p>O que você procura... Quem você procura...Pelo bem de quem você ama!</p>
+                            <p>O que você procura... Pelo bem de quem você ama!</p>
                             <a href="/Login/User"><button type="button" className="btn btn-outline-warning btn-rounded" data-mdb-ripple-color="dark"> Comprador </button></a>
                             <br />
                             <br />
