@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // Definindo a base do url para os endpoints
-const apiUrl = "https://petverso-api.herokuapp.com";
-
+const apiUrl = "localhost:3000";
+// https://petverso-api.herokuapp.com
 // // Definindo o bjeto do serviço
 // const authService = {
 

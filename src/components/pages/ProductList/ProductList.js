@@ -7,7 +7,6 @@ import './ProductList.css';
 function ProductList() {
     const [products, setProducts] = useState([]);
     const [mounted, setMounted] = useState(false);
-    const [company, setCompany] = useState([]);
 
 
     const getData = async () => {
@@ -19,17 +18,9 @@ function ProductList() {
             })
     }
 
-    const getCompany = async () => {
-        await axios.get(`/company/${getData.companyID}`)
-            .then((response) => {
-                    setCompany(response.data)
-            })
-    }
-
     useEffect(() => {
         setMounted(true)
         getData()
-        getCompany();
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [mounted])
@@ -42,7 +33,7 @@ function ProductList() {
                     key={product.id}
                         id={product.id}
                         nome={product.name}
-                        company={company.corporateName}
+                        company={product.company.corporateName}
                         preco={product.price}
                         imgUrl={product.imgUrl}
                     />

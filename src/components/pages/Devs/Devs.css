@@ -12,11 +12,11 @@
   }
   
   body {
-    background: #111 !important;
+    background: rgb(255, 255, 255) !important;
   }
   
   .card {
-    background: #222;
+    background: rgb(145, 144, 144);
     border: 1px solid #dd2476;
     color: rgba(250, 250, 250, 0.8);
     margin-bottom: 2rem;

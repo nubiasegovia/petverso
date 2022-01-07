@@ -3,7 +3,7 @@ import './Login.css';
 import LogoLogin from '../../assets/Login.png';
 import axios from 'axios';
 import { useState } from 'react/cjs/react.development';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
