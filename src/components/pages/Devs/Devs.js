@@ -1,5 +1,5 @@
 import React from 'react';
-import './Devs.css';
+
 import img from '../../assets/insta4.jpg';
 
 const Devs = () => {
