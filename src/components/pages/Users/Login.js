@@ -3,12 +3,14 @@ import './Login.css';
 import LogoLogin from '../../assets/13.png';
 import axios from 'axios';
 import { useState } from 'react/cjs/react.development';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
     const[email, setEmail] = useState('')
     const[password, setPassword] = useState('');
 
+    const navigate = useNavigate();
     const handleSubmit = event =>{
         event.preventDefault();
 
@@ -22,6 +24,7 @@ const Login = () => {
             const token = response.data.token;
             localStorage.setItem('token', token)
         })
+        navigate("/products/all");
     }
 
     return (

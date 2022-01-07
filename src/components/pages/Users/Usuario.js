@@ -3,7 +3,7 @@ import Cadastro from "../../assets/cadastro.png";
 // eslint-disable-next-line
 import axios from "axios";
 import { useState, React } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 const CadastroUser = (props) => {
     const [name, setName] = useState("");

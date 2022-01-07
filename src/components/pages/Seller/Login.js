@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
-    const[email, setEmail] = useState('')
+    const[cnpj, setCnpj] = useState('')
     const[password, setPassword] = useState('');
     const navigate = useNavigate();
 
@@ -17,7 +17,7 @@ const Login = () => {
         event.preventDefault();
 
         const login = {
-            email: email,
+            cnpj: cnpj,
             password: password
         }
 
@@ -39,7 +39,7 @@ const Login = () => {
                     </div>
                     
                     <div class="form-group">
-                        <input type="text" required onChange={event => setEmail(event.target.value)} class="form-control item" id="email" placeholder="E-mail"/>
+                        <input type="text" required onChange={event => setCnpj(event.target.value)} class="form-control item" id="Cnpj" placeholder="CNPJ da Empresa"/>
                     </div>
                     <div class="form-group">
                         <input type="password" required onChange={event => setPassword(event.target.value)} class="form-control item" id="password" placeholder="Senha"/>
