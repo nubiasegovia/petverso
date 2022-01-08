@@ -10,7 +10,7 @@ function ProductList() {
 
 
     const getData = async () => {
-        await axios.get('/product/todos')
+        await axios.get('/product/all')
             .then(response => {
                 if (mounted) {
                     setProducts(response.data)
