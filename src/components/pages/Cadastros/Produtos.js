@@ -26,20 +26,24 @@ const CadastroProduto = () => {
     const [conteudo, setConteudo] = useState('')
     const [restricao, setRestricao] = useState('')
     const [quantidade, setQuantidade] = useState('')
+    const [categoryID, setCategoryID] = useState('')
 
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        const companyID = localStorage.getItem('companyID')
 
         const newProduct = {
-            nomeProduto: nomeProduto,
-            tipoPet: tipoPet,
-            imagemUrl: imagemUrl,
-            preco: preco,
-            descricao: descricao,
-            conteudo: conteudo,
-            restricao: restricao,
-            quantidade: quantidade
+            name: nomeProduto,
+            animalType: tipoPet,
+            imgUrl: imagemUrl,
+            price: preco,
+            description: descricao,
+            contains: conteudo,
+            restrictions: restricao,
+            quantity: quantidade,
+            companyID: companyID,
+            categoryID: categoryID,
 
 
         }
@@ -222,6 +226,21 @@ const CadastroProduto = () => {
                             class="form-control item"
                             id="quantidade"
                             placeholder="Quantidade em estoque"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="radio"
+                            require onChange={event => setCategoryID(event.target.value)}
+                            class="form-control item"
+                            id="categoria"
+                            placeholder="Escolha a categoria"
+                        />
+                        <input
+                            type="radio"
+                            require onChange={event => setCategoryID(event.target.value)}
+                            class="form-control item"
+                            id="caegoria"
                         />
                     </div>
 

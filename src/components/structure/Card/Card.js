@@ -16,8 +16,8 @@ function Card(props) {
                     <div className="product">
                         <img src={props.imgUrl} alt={props.nome} />
                         <div className="details">
-                            <span>{}</span>
-                            <h5>{props.company}</h5>
+                            <span>{props.company}</span>
+                            <h5>{props.nome}</h5>
                             <h4>R$ {props.preco}</h4>
                         </div>
                         <div className="cart">

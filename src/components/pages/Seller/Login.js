@@ -24,7 +24,11 @@ const Login = () => {
         axios.post(`/auth/login-company`, login)
         .then(response =>{
             const token = response.data.token;
-            localStorage.setItem('token', token)
+                const id = response.data.user.id;
+                console.log(id)
+                localStorage.setItem('companyID', id)
+                localStorage.setItem('token', token)
+                console.log(response)
         })
         navigate("/DashSeller");
 
