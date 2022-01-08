@@ -5,9 +5,9 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://petverso-api.herokuapp.com/';
+axios.defaults.baseURL = 'localhost:3000';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
-
+// https://petverso-api.herokuapp.com/
 
 ReactDOM.render(
   <React.StrictMode>

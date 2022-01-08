@@ -35,7 +35,7 @@ const Home = () => {
             </div>
            <Carousel/>
             <br/>
-            <h1 className="destaque">Podutos em Destaque</h1>
+            <h1 className="destaque">Produtos em Destaque</h1>
             
             
            <ProductList/>

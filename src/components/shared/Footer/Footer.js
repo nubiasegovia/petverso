@@ -25,13 +25,13 @@ const Footer = () => {
                                     Links Úteis
                                 </h6>
                                 <p>
-                                    <i class="fab fa-android"></i><a href="#!" class="text-reset"> Devs</a>
+                                    <i class="fab fa-android"></i><a href="/devs" class="text-reset"> Devs</a>
                                 </p>
                                 <p>
                                     <i class="fas fa-headset"></i> <a href="#!" class="text-reset">Suporte</a>
                                 </p>
                                 <p>
-                                    <i class="fas fa-hands-helping"></i> <a href="#!" class="text-reset">Ajuda</a>
+                                    <i class="fas fa-hands-helping"></i> <a href="https://google.com" target="_blank" class="text-reset">Ajuda</a>
                                 </p>
                             </div>
                         
