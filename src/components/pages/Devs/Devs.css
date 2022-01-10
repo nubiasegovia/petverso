@@ -2,14 +2,14 @@
     size: 50px;
     position: relative;
     text-align: center;
-    color: #FF512F;
+    color: #7e7e7e;
     margin-top: 20px;
-    text-shadow: #222;
+    text-shadow: rgb(0, 0, 0);
     
   }
 
   :root {
-    --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+    --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) ;
   }
   
   body {
@@ -24,7 +24,7 @@
   }
 
   .card-img-top{
-    width: 18.9rem;
+    width: 18.8rem;
     height: 18rem;
   }
 
@@ -44,19 +44,20 @@
     border: 5px solid;
     padding: 0.75rem;
     border-image-slice: 1;
-    background: var(--gradient) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    border-image-source:  var(--gradient) !important; 
+    background: var(--gradient) ;
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent ;
+    border-image-source:  var(--gradient) ; 
     text-decoration: none;
-    transition: all .3s ease-in-out;
+    transition: all .8s ease-in-out;
   }
   
   .btn:hover, .btn:focus {
-        background: var(--gradient) !important;
-    -webkit-background-clip: none !important;
-    -webkit-text-fill-color: #fff !important;
-    border: 5px solid #fff !important; 
+    
+        background: var(--gradient) ;
+    -webkit-background-clip: none ;
+    -webkit-text-fill-color: #fff ;
+    border: 5px solid #fff ; 
     box-shadow: #222 1px 0 10px;
     text-decoration: underline;
   }
