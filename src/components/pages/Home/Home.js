@@ -17,13 +17,15 @@ const Home = () => {
     return (
         <>
             <div className="animals">
-                <img className="Sil" src = {SilDog}/>
-                <img className="Sil" src = {SilMouse}/>
-                <img className="Sil" src = {SilRep}/>
-                <img className="Sil" src = {SilHabit}/>
-                <img className="Sil" src = {SilFish}/>
-                <img className="Sil" src = {SilBird}/>
-                <img className="Sil" src = {SilCat}/>
+                <div>
+                    <img className="Sil" src = {SilDog}/>
+                    <img className="Sil" src = {SilMouse}/>
+                    <img className="Sil" src = {SilRep}/>
+                    <img className="Sil" src = {SilHabit}/>
+                    <img className="Sil" src = {SilFish}/>
+                    <img className="Sil" src = {SilBird}/>
+                    <img className="Sil" src = {SilCat}/>
+                </div>
                 <br />
                 <img className="Sil2" src = {HomeText}/>
                 
