@@ -1,6 +1,8 @@
 import React from "react";
 import './Navbar.css';
 import PetLogo from "../../assets/LogoTopo.gif";
+import { IconContext } from "react-icons";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -13,7 +15,11 @@ const Navbar = () => {
                     <a href="/products/all" className='menu1'> Produtos </a>
                     <a href="/iniciativa"className='menu2'> Nossa Iniciativa </a>
                     <a target="_blank" href="/"className='menu3'> PetDicas </a>
-                    <a href="/HomeLogin"><button className='btn-topo'>Login</button></a>
+                    <a href="/homeLogin"><button className='btn-topo'>Login</button></a>
+                    <IconContext.Provider value={{ color: "#03AEA2", size:"1.9em", className: "cart-icon"}}>
+                        <a href="/cart"><FaShoppingCart /></a>
+                    </IconContext.Provider>
+                    
                     
                 </div>    
             </div>
