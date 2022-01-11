@@ -1,0 +1,124 @@
+.shopwrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.shopcart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    width: 90%;
+}
+
+.shopcart-title {
+    color: #03AEA2;
+    padding: 1%;
+    letter-spacing: 4px;
+}
+
+.products {
+    border-top: solid #03AEA2;
+    border-bottom: solid #03AEA2;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+    align-items: center;
+    color: #757575;
+    background-color: #f0fafd;
+}
+
+.products img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.purchase-details {
+    display: flex;
+    width: 85%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    padding: 1% 0;
+}
+
+.subtotal-details, .shipping-price, .total {
+    display: flex;
+    width: 25%;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.subtotal-details, .shipping-price, .cupom, .shipping {
+    font-weight: bold;
+    color: #03AEA2;
+}
+
+.total {
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+.checkout {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    padding: 1% 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recommendation {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    padding: 7% 0;
+    flex-direction: column;
+}
+
+.recommendation h4{
+    border-top: solid #03AEA2;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 4px;
+    color: #03AEA2;
+}
+
+.btn-checkout {
+    background: #03AEA2;
+    color: #f0fafd;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: medium;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    border: none;
+}
+
+.btn-cupom, .btn-cep {
+    background: #f0fafd;
+    color: #03AEA2;
+    border-radius: 15px;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: medium;
+    text-decoration: none;
+    outline: 0;
+    max-width: 100%;
+    size: 100px;
+    width: 100px;
+    border: none;
+}
+
+.checkout input {
+    border: solid 1px #03AEA2;
+}
