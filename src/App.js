@@ -34,10 +34,10 @@ const App = () =>{
         <Route path="/product" element={<ViewOneProduct />} />
         <Route path="/products/all" element={<ProductList />} />
         <Route path="/iniciativa" element={<Iniciativa/>} />
-        <Route path="/dashSeller" element={<DashboardSeller/>} />
-        {/* <Route path="/Devs" element={<Devs/>} /> */}
+        <Route path="/dashseller" element={<DashboardSeller/>} />
         <Route path="/cart" element={<ShopCart />} />
         <Route path="/myaccount" element={<UserDashboard />} />
+        <Route path="/devs" element={<Devs/>} />
       </Routes>
       <Footer />
     </div>
