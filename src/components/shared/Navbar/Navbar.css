@@ -1,43 +1,33 @@
 * {
     font-family: 'Varela Round', sans-serif;
-	
 }
 
 .bar {
 	background: #fff;
 	border-bottom: 1px solid #dfe3e8;
 	border-radius: 0;
-	display: flex;
-    flex: 1;
-}
-
-.brand {
-	font-size: 30px;
-	color: #888;
-	font-weight: bold;
-	margin: 0 auto;
-	padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
 }
 
 .menus{
-	display: flex;
-    flex-direction: row;
-    margin-left: 90px;
+    display: flex;
     align-items: center;
-
+    justify-content: center;
+    width: 100%;
+    height: auto;
 }
 
 .btn-topo{
-    /* float: left; */
     background: #f0fafd;
     color: #5691ff;
     border-radius: 15px;
-    margin: 0px 10px 0px 350px;
     line-height: 35px;
     font-weight: bold;
     font-size: medium;
-    /* position: sticky; */
-    /* z-index: 9999; */
     text-decoration: none;
     outline: 0;
     max-width: 100%;
@@ -45,6 +35,11 @@
     width: 100px;
     border-color: #727f8a;
     opacity: 1;
+    margin: 0px 10px 0px 0px;
+}
+
+.cart-icon{
+    margin: 0px 10px 0px 0px;
 }
 	
 .btn-topo:hover{
@@ -58,7 +53,7 @@
 }
 
 .menu1 {
-    margin: 0 10px 0 110px;
+    /* margin: 0 10px 0 110px; */
     transition: ease-in-out 0.3s;
     text-decoration: none;
     color: #FD8C41;
@@ -100,17 +95,3 @@
     color: rgb(236, 165, 230);
 	text-decoration: none;
 }
-
-.login {
-    margin: 20px 0px 5px 200px;
-    text-align: center;
-    transition: ease-in-out 0.3s;
-    text-decoration: none;
-    color: #70aff7;
-	font-size: 22px;
-	font-weight: bolder;
-	cursor: pointer;
-}
-
-
-
