@@ -30,7 +30,7 @@ route +1ms
 //PRODUCT
 {/product}: +1ms
 {/product/cadastrar, POST} route +0ms
-20 {/product/todos, GET} 
+20 {/product/all, GET} 
 {/product/:id, GET} route +0ms
  {/product/:id, PATCH} // EDITAR
 {/product/apagar/:id, DELETE} 
