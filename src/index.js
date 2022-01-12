@@ -11,7 +11,7 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+        <App />      
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

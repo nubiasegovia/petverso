@@ -15,8 +15,8 @@ import CadastroProduto from './components/pages/Cadastros/Produtos';
 import Iniciativa from './components/pages/Iniciativa/Iniciativa';
 import DashboardSeller from './components/pages/Seller/Dashboard';
 import Devs from './components/pages/Devs/Devs';
-
-
+import ShopCart from './components/pages/ShopCart/ShopCart';
+import UserDashboard from './components/pages/Users/UserDashboard';
 
 
 const App = () =>{
@@ -25,17 +25,19 @@ const App = () =>{
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/HomeLogin" element={<HomeLogin/>} />
-        <Route path="/Login/User" element={<LoginUser/>} />
-        <Route path="/Login/Seller" element={<LoginSeller/>} />
+        <Route path="/homeLogin" element={<HomeLogin/>} />
+        <Route path="/login/user" element={<LoginUser/>} />
+        <Route path="/login/seller" element={<LoginSeller/>} />
         <Route path="/cadastro/pf" element={<CadastroUser/>} />
         <Route path="/cadastro/pj" element={<CadastroVendedor/>} />
         <Route path="/cadastro/product" element={<CadastroProduto/>} />
         <Route path="/product" element={<ViewOneProduct />} />
         <Route path="/products/all" element={<ProductList />} />
         <Route path="/iniciativa" element={<Iniciativa/>} />
-        <Route path="/DashSeller" element={<DashboardSeller/>} />
-        {/* <Route path="/Devs" element={<Devs/>} /> */}
+        <Route path="/dashseller" element={<DashboardSeller/>} />
+        <Route path="/cart" element={<ShopCart />} />
+        <Route path="/myaccount" element={<UserDashboard />} />
+        <Route path="/devs" element={<Devs/>} />
       </Routes>
       <Footer />
     </div>

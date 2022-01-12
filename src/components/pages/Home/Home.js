@@ -17,23 +17,24 @@ const Home = () => {
     return (
         <>
             <div className="animals">
-                <img className="Sil" src = {SilDog}/>
-                <img className="Sil" src = {SilMouse}/>
-                <img className="Sil" src = {SilRep}/>
-                <img className="Sil" src = {SilHabit}/>
-                <img className="Sil" src = {SilFish}/>
-                <img className="Sil" src = {SilBird}/>
-                <img className="Sil" src = {SilCat}/>
+                <div>
+                    <img className="Sil" src = {SilDog}/>
+                    <img className="Sil" src = {SilMouse}/>
+                    <img className="Sil" src = {SilRep}/>
+                    <img className="Sil" src = {SilHabit}/>
+                    <img className="Sil" src = {SilFish}/>
+                    <img className="Sil" src = {SilBird}/>
+                    <img className="Sil" src = {SilCat}/>
+                </div>
                 <br />
                 <img className="Sil2" src = {HomeText}/>
-                
                 <h5 className="destaque">Ajudando pequenas empresas e produtores a dar o suporte que todo tutor de pet precisa nessa incrivel jornada!</h5>
                 <br />
                 <br />
                 
 
             </div>
-           <Carousel/>
+            <Carousel/>
             <br/>
             <h1 className="destaque">Produtos em Destaque</h1>
             

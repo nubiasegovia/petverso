@@ -170,20 +170,31 @@
   position: relative;
   text-align: center;
   color: #888;
-  
+  size: 20px;
+}
+
+.animals{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
 }
 
 .Sil{
-  max-width: 50px;
-  align-items: center;
-  margin-left: 120px;
-  margin-top: 20px;
+  width: 100%;
+  max-width: 60px;
+  height: auto;
+  text-align: center;
+  margin: 20px;
+
 }
 
 .Sil2{
+  width: 100%;
   max-width: 800px;
-  align-items: center;
-  margin-left: 250px;
+  height: auto;
+  text-align: center;
   
 }
 
