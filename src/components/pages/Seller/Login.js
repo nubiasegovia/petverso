@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Login.css';
 import LogoLogin from '../../assets/Login.png';
 import axios from 'axios';
 import { useState } from 'react/cjs/react.development';
 import { useNavigate } from 'react-router-dom';
+import { GlobalContext } from '../../shared/Providers/Providers';
 
 
 const Login = () => {
 
-    const[cnpj, setCnpj] = useState('')
+    const[cnpj, setCnpj] = useState('');
     const[password, setPassword] = useState('');
     const navigate = useNavigate();
+    const {setUser} = useContext(GlobalContext)
 
 
     const handleSubmit = event =>{
         event.preventDefault();
+        setUser(true);
 
         const login = {
             cnpj: cnpj,

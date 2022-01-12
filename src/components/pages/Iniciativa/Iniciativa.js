@@ -1,11 +1,11 @@
 import React from 'react';
 import './Iniciativa.css';
-import Init from '../../assets/11.png';
+import Init from '../../assets/iniciativa.png';
 
 const Iniciativa = () => {
     return (
         <>
-            <div>
+            <div className="iniciativa">
                 <h3 className='destaque'>
                     Como Nasceu o PetVerso?
                 </h3>

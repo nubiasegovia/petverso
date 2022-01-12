@@ -17,11 +17,13 @@ import DashboardSeller from './components/pages/Seller/Dashboard';
 import Devs from './components/pages/Devs/Devs';
 import ShopCart from './components/pages/ShopCart/ShopCart';
 import UserDashboard from './components/pages/Users/UserDashboard';
+import StoreProvider from './components/shared/Providers/Providers';
 
 
 const App = () =>{
   return (
     <div className="app">
+      <StoreProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
@@ -40,6 +42,7 @@ const App = () =>{
         <Route path="/devs" element={<Devs/>} />
       </Routes>
       <Footer />
+      </StoreProvider>
     </div>
   )
 }
