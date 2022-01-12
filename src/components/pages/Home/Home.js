@@ -28,14 +28,13 @@ const Home = () => {
                 </div>
                 <br />
                 <img className="Sil2" src = {HomeText}/>
-                
                 <h5 className="destaque">Ajudando pequenas empresas e produtores a dar o suporte que todo tutor de pet precisa nessa incrivel jornada!</h5>
                 <br />
                 <br />
                 
 
             </div>
-           <Carousel/>
+            <Carousel/>
             <br/>
             <h1 className="destaque">Produtos em Destaque</h1>
             
