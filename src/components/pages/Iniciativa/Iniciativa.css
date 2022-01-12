@@ -1,25 +1,34 @@
 .destaque{
-    size: 50px;
+    size: 60px;
     position: relative;
     text-align: center;
-    color: rgb(82, 80, 80);
+    color: rgb(87, 87, 87);
     margin-top: 20px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
+    font-weight: bold;
     
   }
 
 .destaque2{
     position: relative;
     text-align: center;
-    color: #888;
+    color: rgb(87, 87, 87);
     margin-top: 20px;
-    
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
+}
+
+.iniciativa{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
 }
 
 .imginit{
-    position: relative;
-    text-align: center;
-    margin-left: 600px;
-    width:200px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .parar{

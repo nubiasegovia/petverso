@@ -229,19 +229,22 @@ const CadastroProduto = () => {
                         />
                     </div>
                     <div class="form-group">
-                        <input
-                            type="radio"
-                            require onChange={event => setCategoryID(event.target.value)}
-                            class="form-control item"
-                            id="categoria"
-                            placeholder="Escolha a categoria"
-                        />
-                        <input
-                            type="radio"
-                            require onChange={event => setCategoryID(event.target.value)}
-                            class="form-control item"
-                            id="caegoria"
-                        />
+                        <div class="dropdown"> <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false"> <span>Categorias</span> <i class="fa fa-caret-down"></i> </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item">Acessórios</a></li>
+                                <li><a class="dropdown-item">Brinquedos</a></li>
+                                <li><a class="dropdown-item">Comida Natural</a></li>
+                                <li><a class="dropdown-item">Brinquedos</a></li>
+                                <li><a class="dropdown-item">Higiene e Beleza</a></li>
+                                <li><a class="dropdown-item">Medicamentos</a></li>
+                                <li><a class="dropdown-item">Petiscos</a></li>
+                                <li><a class="dropdown-item">Ração em Flocos</a></li>
+                                <li><a class="dropdown-item">Ração Medicamentosa</a></li>
+                                <li><a class="dropdown-item">Ração Seca</a></li>
+                                <li><a class="dropdown-item">Ração Úmida</a></li>
+                                <li><a class="dropdown-item">Roupas</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="form-group">
