@@ -19,6 +19,7 @@
     justify-content: center;
     width: 100%;
     height: auto;
+    
 }
 
 .btn-topo{
@@ -53,7 +54,7 @@
 }
 
 .menu1 {
-    /* margin: 0 10px 0 110px; */
+    margin: 0 20px 0 0px;
     transition: ease-in-out 0.3s;
     text-decoration: none;
     color: #FD8C41;
@@ -67,7 +68,7 @@
 }
 
 .menu2 {
-    margin: 0 10px 0 10px;
+    margin: 0 20px 0 0px;
     text-align: center;
     transition: ease-in-out 0.3s;
     text-decoration: none;
@@ -82,7 +83,7 @@
 }
 
 .menu3 {
-    margin: 0 10px 0 10px;
+    margin: 0 20px 0 0px;
     text-align: center;
     transition: ease-in-out 0.3s;
     text-decoration: none;
