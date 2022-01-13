@@ -4,7 +4,26 @@ import "./ShopCart.css";
 import { FaShoppingCart } from "react-icons/fa";
 
 
-const ShopCart = () => {
+const ShopCart = async () => {
+
+        const userID = localStorage.getItem('userID');
+
+        let order = { userID: userID,
+        productID: 'asasd',
+        productQnty: 'parseInt(quantity)'}
+
+        let cart = await axios.get(`/user/${userID}`).then((req, res) =>{
+            console.log()
+        })
+
+
+        const addToCart = async (event) => {
+        event.preventDefault()
+        await axios.post(`/cart/addtocart`, order).then((res) =>
+        console.log(res))
+}
+
+
 
 
     return (

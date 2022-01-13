@@ -55,161 +55,161 @@ const CadastroUser = (props) => {
     
     return (
         <>
-            <div class="registration-form">
+            <div className="registration-form">
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <img className="imgcad" alt="" src={Cadastro} />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <input
                             type="text"
                             require
                             onChange={(event) => setName(event.target.value)}
-                            class="form-control item"
+                            className="form-control item"
                             id="name"
                             placeholder="Nome Completo"
                         />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <input
                             type="text"
                             require
                             onChange={(event) => setUsername(event.target.value)}
-                            class="form-control item"
+                            className="form-control item"
                             id="username"
                             placeholder="Usuário"
                         />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <input
                             type="password"
                             require
                             onChange={(event) => setPassword(event.target.value)}
-                            class="form-control item"
+                            className="form-control item"
                             id="password"
                             placeholder="Senha"
                         />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <input
                             type="password"
                             require
                             onChange={(event) => setPasswordConfirmation(event.target.value)}
-                            class="form-control item"
+                            className="form-control item"
                             id="passwordConfirmation"
                             placeholder="Confirmação de Senha"
                         />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <input
                             type="text"
                             require
                             onChange={(event) => setEmail(event.target.value)}
-                            class="form-control item"
+                            className="form-control item"
                             id="email"
                             placeholder="E-mail"
                         />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <input
                             type="text"
                             require
                             onChange={(event) => setPhone(event.target.value)}
-                            class="form-control item"
+                            className="form-control item"
                             id="phone"
                             placeholder="Nº de Telefone/Whatsapp"
                         />
                     </div>
 
-                    <div class="form-group">
+                    <div className="form-group">
                         <input
                             type="text"
                             require
                             onChange={(event) => setBirthday(event.target.value)}
-                            class="form-control item"
+                            className="form-control item"
                             id="birth-date"
                             placeholder="Data de Nascimento"
                         />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <input
                             type="text"
                             require
                             onChange={(event) => setCpf(event.target.value)}
-                            class="form-control item"
+                            className="form-control item"
                             id="CPF"
                             placeholder="CPF"
                         />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="inputAddress">Endereço</label>
                         <input
                             type="text"
                             require
                             onChange={(event) => setAddress1(event.target.value)}
-                            class="form-control"
+                            className="form-control"
                             id="address1"
                             placeholder="Dog Street, nº 0"
                         />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="inputAddress2">Complemento</label>
                         <input
                             type="text"
                             require
                             onChange={(event) => setAddress2(event.target.value)}
-                            class="form-control"
+                            className="form-control"
                             id="address2"
                             placeholder="Casa, Apto, etc."
                         />
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
+                    <div className="form-row">
+                        <div className="form-group col-md-6">
                             <label for="inputCity">Cidade</label>
                             <input
                                 type="text"
                                 require
                                 onChange={(event) => setCity(event.target.value)}
-                                class="form-control"
+                                className="form-control"
                                 id="inputCity"
                             />
                         </div>
-                        <div class="form-group col-md-6">
+                        <div className="form-group col-md-6">
                             <label for="inputCity">Estado</label>
                             <input
                                 type="text"
                                 require
                                 onChange={(event) => setState(event.target.value)}
-                                class="form-control"
+                                className="form-control"
                                 id="inputCity"
                             />
                         </div>
-                        <div class="form-group col-md-4">
+                        <div className="form-group col-md-4">
                             <label for="inputCEP">CEP</label>
                             <input
                                 type="text"
                                 require
                                 onChange={(event) => setCep(event.target.value)}
-                                class="form-control"
+                                className="form-control"
                                 id="inputCEP"
                             />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <button
                             type="submit"
                             value="Enviar"
-                            class="btn btn-block create-account"
+                            className="btn btn-block create-account"
                         >
                             Criar Conta
                         </button> 
                     </div>
                 </form>
-                <div class="social-media">
+                <div className="social-media">
                     <h5>Cadastre-se com sua mídia social</h5>
-                    <div class="social-icons">
+                    <div className="social-icons">
                         <a href="/">
-                            <i class="icon-social-google" title="Google"></i>
+                            <i className="icon-social-google" title="Google"></i>
                         </a>
                     </div>
                 </div>
