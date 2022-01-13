@@ -52,7 +52,7 @@ const Product = () => {
         <p>{product.description}</p>
         <div className="wrapper-pi">
           <h2>R$ {product.price}</h2>
-//<span>{product.quantity}</span>
+          <span>{product.quantity}</span>
           <input type="number" required onChange={event => setQuantity(event.target.value)}/>
         </div>
         <div className="wrapper-shopbtn">

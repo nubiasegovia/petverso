@@ -7,6 +7,7 @@ import DogHouse from '../../assets/21.jpg';
 import './Dashboard.css';
 
 const DashboardSeller = () => {
+    id = localStorage.getItem('id')
 
     return (
         <>

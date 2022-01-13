@@ -24,7 +24,7 @@ function Card(props) {
                         </div>
                         <div className="cart">
                             <IconContext.Provider value={{ color: "#03AEA2", size:"1.4em", className: "cart-icon"}}>
-                            <a href="/"><FaCartPlus /></a>
+                            <a href="/cart"><FaCartPlus /></a>
                             </IconContext.Provider>
                         </div>
                     </div>
