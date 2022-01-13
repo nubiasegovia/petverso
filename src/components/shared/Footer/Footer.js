@@ -28,7 +28,7 @@ const Footer = () => {
                                     <i className="fab fa-android"></i><a href="/devs" className="text-reset"> Devs</a>
                                 </p>
                                 <p>
-                                    <i className="fas fa-headset"></i> <a href="#!" className="text-reset">Suporte</a>
+                                    <i className="fas fa-headset"></i> <a href="/suport" className="text-reset">Suporte</a>
                                 </p>
                                 <p>
                                     <i className="fas fa-hands-helping"></i> <a href="https://google.com" target="_blank" className="text-reset">Ajuda</a>

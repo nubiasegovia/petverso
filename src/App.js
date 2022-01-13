@@ -19,6 +19,7 @@ import ShopCart from './components/pages/ShopCart/ShopCart';
 import UserDashboard from './components/pages/Users/UserDashboard';
 import StoreProvider from './components/shared/Providers/Providers';
 import PetDicas from './components/pages/Petdicas/Petdicas';
+import Suport from './components/pages/Suport/Suport';
 
 
 const App = () =>{
@@ -42,6 +43,7 @@ const App = () =>{
         <Route path="/myaccount" element={<UserDashboard />} />
         <Route path="/devs" element={<Devs/>} />
         <Route path="/petdicas" element={<PetDicas/>} />
+        <Route path="/suport" element={<Suport/>} />
       </Routes>
       <Footer />
       </StoreProvider>
