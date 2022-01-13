@@ -19,6 +19,8 @@ function Card(props) {
                             <span>{props.company}</span>
                             <h5>{props.nome}</h5>
                             <h4>R$ {props.preco}</h4>
+                            <span>{props.restrictions}</span>
+                            <span>{props.quantity}</span>
                         </div>
                         <div className="cart">
                             <IconContext.Provider value={{ color: "#03AEA2", size:"1.4em", className: "cart-icon"}}>
