@@ -1,0 +1,55 @@
+.cardPetDicas{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    
+  }
+
+.DicasImg{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px 0px 20px 0px;
+}
+
+.destaqueDicas{
+    size: 60px;
+    position: relative;
+    text-align: center;
+    color: rgb(63, 128, 226);
+    margin-top: 20px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 40px 0px 20px 0px;
+}
+
+.PatasImg{
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    margin: 40px 10px 20px 10px;
+}
+
+.dicasTopo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.notice{
+    float:left;
+}
+
+.btnNotice{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ff7e57;
+    border: none;
+    color: white;
+    margin: 0px 10px 20px 0px;
+    transition: ease-in-out 0.3s;
+}

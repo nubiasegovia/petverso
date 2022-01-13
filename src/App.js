@@ -18,6 +18,7 @@ import Devs from './components/pages/Devs/Devs';
 import ShopCart from './components/pages/ShopCart/ShopCart';
 import UserDashboard from './components/pages/Users/UserDashboard';
 import StoreProvider from './components/shared/Providers/Providers';
+import PetDicas from './components/pages/Petdicas/Petdicas';
 
 
 const App = () =>{
@@ -40,6 +41,7 @@ const App = () =>{
         <Route path="/cart" element={<ShopCart />} />
         <Route path="/myaccount" element={<UserDashboard />} />
         <Route path="/devs" element={<Devs/>} />
+        <Route path="/petdicas" element={<PetDicas/>} />
       </Routes>
       <Footer />
       </StoreProvider>
