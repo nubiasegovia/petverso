@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect, useLocation } from 'react';
 import Dogfood from '../../assets/dogfood.jpg';
-
+import axios from 'axios';
 import './Dashboard.css';
 
 const DashboardSeller = () => {
+
+    
+    const id = localStorage.getItem('companyID');
+    
+    const [company, setCompany] = useState([]);
+    
+    const [mounted, setMounted] = useState(false);
+  
+    const getData = async () => {
+        await axios.get(`/company/${id}`)
+            .then(response => {
+                if (mounted) {
+                    setCompany(response.data)
+                }
+            })
+    }
+
+    useEffect(() => {
+        setMounted(true)
+        getData()
+    }, [mounted])
+
 
     return (
         <>
@@ -17,6 +39,7 @@ const DashboardSeller = () => {
                 <div className="cardDashboardSeller">
 
                         <h3 className='destaque'>Seus Produtos Cadastrados</h3>
+                        <h2>{company.corporateName}</h2>
                         <br />
                         <div class="cardDash">
                             <img src={Dogfood} class="card-img-top" alt="..."/>
