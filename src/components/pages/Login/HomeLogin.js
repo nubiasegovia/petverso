@@ -6,15 +6,15 @@ const Cadastro = () => {
             <div className='fundohome'>
                 <section>
                 
-                    <div class="container">
-                        <div class="background-img">
+                    <div className="container">
+                        <div className="background-img">
                             
-                        <div class="box">
+                        <div className="box">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
-                            <div class="content">
+                            <div className="content">
                             <h2>PetVerso </h2>
                             <p>O que você procura... Pelo bem de quem você ama!</p>
                             <a href="/Login/User"><button type="button" className="btn btn-outline-warning btn-rounded" data-mdb-ripple-color="dark"> Comprador </button></a>

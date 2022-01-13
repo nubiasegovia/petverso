@@ -21,25 +21,30 @@ function ProductList() {
     useEffect(() => {
         setMounted(true)
         getData()
-
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [mounted])
 
     return (
-        <div className="list-container">
-            {
-                products.map(product => (
-                    <Card
-                    key={product.id}
-                        id={product.id}
-                        nome={product.name}
-                        company={product.company.corporateName}
-                        preco={product.price}
-                        imgUrl={product.imgUrl}
-                    />
-                ))
-            }
-        </div>
+        <>
+            <br />
+            <h1 className='destaque'>Nossos Produtos</h1>
+            <br />
+            <div className="list-container">
+                
+                {
+                    products.map(product => (
+                        <Card
+                        key={product.id}
+                            id={product.id}
+                            nome={product.name}
+                            company={product.company.corporateName}
+                            preco={product.price}
+                            imgUrl={product.imgUrl}
+                        />
+                    ))
+                }
+            </div>
+            <br />
+        </>    
     )
 }
 
