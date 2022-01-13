@@ -33,7 +33,7 @@ const Login = () => {
                 localStorage.setItem('token', token)
                 console.log(response)
         })
-        navigate("/DashSeller");
+        navigate("/dashseller");
 
     }
 
