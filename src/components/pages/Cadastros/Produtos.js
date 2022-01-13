@@ -228,24 +228,183 @@ const CadastroProduto = () => {
                             placeholder="Quantidade em estoque"
                         />
                     </div>
-                    <div className="form-group">
-                        <div className="dropdown"> <button className="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false"> <span>Categorias</span> <i className="fa fa-caret-down"></i> </button>
-                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a className="dropdown-item">Acessórios</a></li>
-                                <li><a className="dropdown-item">Brinquedos</a></li>
-                                <li><a className="dropdown-item">Comida Natural</a></li>
-                                <li><a className="dropdown-item">Brinquedos</a></li>
-                                <li><a className="dropdown-item">Higiene e Beleza</a></li>
-                                <li><a className="dropdown-item">Medicamentos</a></li>
-                                <li><a className="dropdown-item">Petiscos</a></li>
-                                <li><a className="dropdown-item">Ração em Flocos</a></li>
-                                <li><a className="dropdown-item">Ração Medicamentosa</a></li>
-                                <li><a className="dropdown-item">Ração Seca</a></li>
-                                <li><a className="dropdown-item">Ração Úmida</a></li>
-                                <li><a className="dropdown-item">Roupas</a></li>
-                            </ul>
+
+                    <div className="categoria">
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox1"
+                                value="opcao1"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheck1">
+                                Acessórios
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox2"
+                                value="opcao2"
+                            />
+                           
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Brinquedos
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox3"
+                                value="opcao3"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Comida Natural
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox4"
+                                value="opcao4"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Brinquedos
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox5"
+                                value="opcao5"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Higiene e Beleza
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox6"
+                                value="opcao6"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Medicamentos
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Petiscos
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Ração em Flocos
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Ração Medicamentosa
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Ração Seca
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Ração Úmida
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Roupas
+                            </label>
                         </div>
                     </div>
+
+                   
 
                     <div className="form-group">
                         <button type="submit" className="btn btn-block  create-account">
