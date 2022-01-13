@@ -30,16 +30,15 @@ const DashboardSeller = () => {
     return (
         <>
             <div>
-                {/* <ol className="breadcrumb">
-                    <li className="breadcrumb-item active "><a >Empresa PetVerso</a></li>
-                    <li className="breadcrumb-item"><a href="#">Produtos</a></li>
-                </ol>   */}
-                
+                 
             
                 <div className="cardDashboardSeller">
 
                         <h3 className='destaque'>Seus Produtos Cadastrados</h3>
+                        <br />
                         <h2>{company.corporateName}</h2>
+                        <br />
+                        <a href="/cadastro/product"  className="btn btn-primary rounded"> Novo Produto</a>
                         <br />
                         <div class="cardDash">
                             <img src={Dogfood} class="card-img-top" alt="..."/>
