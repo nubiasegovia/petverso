@@ -7,7 +7,6 @@ import DogHouse from '../../assets/21.jpg';
 import './Dashboard.css';
 
 const DashboardSeller = () => {
-    id = localStorage.getItem('id')
 
     return (
         <>
@@ -15,7 +14,8 @@ const DashboardSeller = () => {
                 {/* <ol className="breadcrumb">
                     <li className="breadcrumb-item active "><a >Empresa PetVerso</a></li>
                     <li className="breadcrumb-item"><a href="#">Produtos</a></li>
-                </ol> */}
+                </ol>   */}
+                
             
                 <div className="cardDashboardSeller">
 

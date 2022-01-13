@@ -27,7 +27,7 @@ const Login = () => {
         axios.post(`/auth/login-company`, login)
         .then(response =>{
             const token = response.data.token;
-                const companyID = response.data.user.id;
+                const companyID = response.data.company.id;
                 console.log(companyID)
                 localStorage.setItem('companyID', companyID)
                 localStorage.setItem('token', token)
