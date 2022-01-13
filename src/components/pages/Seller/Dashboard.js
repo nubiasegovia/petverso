@@ -1,9 +1,6 @@
 import React from 'react';
 import Dogfood from '../../assets/dogfood.jpg';
-import Food from '../../assets/18.jpg';
-import Casinha from '../../assets/19.jpg';
-import Catfood from '../../assets/20.jpg';
-import DogHouse from '../../assets/21.jpg';
+
 import './Dashboard.css';
 
 const DashboardSeller = () => {
