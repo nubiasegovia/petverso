@@ -44,9 +44,9 @@ const CadastroProduto = () => {
             quantity: quantidade,
             companyID: companyID,
             categoryID: categoryID,
-
-
         }
+
+
         const response = await axios
             .post("/product", newProduct)
             .then((res) => {
@@ -56,7 +56,7 @@ const CadastroProduto = () => {
             .catch((error) => {
                 console.log(error);
             });
-        navigate("/DashSeller");
+        navigate("/dashSeller");
     };
     return (
         <>
