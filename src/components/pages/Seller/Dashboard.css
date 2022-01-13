@@ -1,5 +1,82 @@
-.topo{
-    font-size: 600w;
-    color: #FD8C41;
+.cardDash{
+    width: 18rem;
+    height: auto;
+    max-width: 540px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    padding: 0;
 }
 
+.card-body {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.destaque{
+    size: 60px;
+    position: relative;
+    text-align: center;
+    color: rgb(87, 87, 87);
+    margin-top: 20px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
+    font-weight: bold;
+    
+  }
+
+
+.cardDashboardSeller{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  
+}
+
+.btnDash{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin: 0px 10px 20px 0px;
+    transition: ease-in-out 0.3s;
+}
+
+.btnDash:hover{
+    text-decoration: none;
+    opacity: 0.6;
+    color: white;
+    font-size: 14px;
+}
+
+.btnDash2{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ff7e57;
+    border: none;
+    color: white;
+    margin: 0px 10px 20px 0px;
+    transition: ease-in-out 0.3s;
+}
+
+.btnDash2:hover{
+    text-decoration: none;
+    opacity: 0.6;
+    color: white;
+    font-size: 14px;
+}
+
+.cartDash{
+    margin: 0px 10px 20px 0px;
+}
