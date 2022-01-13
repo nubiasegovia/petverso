@@ -32,6 +32,7 @@ const CadastroProduto = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         const companyID = localStorage.getItem('companyID')
+        const token = localStorage.getItem('token')
 
         const newProduct = {
             name: nomeProduto,
@@ -43,12 +44,12 @@ const CadastroProduto = () => {
             restrictions: restricao,
             quantity: quantidade,
             companyID: companyID,
-            categoryID: categoryID,
+            categoryID: parseInt(categoryID),
         }
 
 
         const response = await axios
-            .post("/product", newProduct)
+            .post("/product", newProduct, {"Authorization" : `Bearer ${token}`})
             .then((res) => {
                 console.log(res);
                 console.log(response.data);
@@ -56,7 +57,7 @@ const CadastroProduto = () => {
             .catch((error) => {
                 console.log(error);
             });
-        navigate("/dashSeller");
+        navigate("/dashseller");
     };
     return (
         <>
@@ -82,7 +83,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setTipoPet(event.target.value)}
                                 id="inlineCheckbox1"
-                                value="opcao1"
+                                value="Aves"
                             />
                             <GiHummingbird />
                             <label className="form-check-label" for="inlineCheck1">
@@ -95,7 +96,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setTipoPet(event.target.value)}
                                 id="inlineCheckbox2"
-                                value="opcao2"
+                                value="Cachorro"
                             />
                             <SiDatadog />
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -109,7 +110,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setTipoPet(event.target.value)}
                                 id="inlineCheckbox3"
-                                value="opcao3"
+                                value="Coelho"
                             />
                             <GiRabbit />
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -123,7 +124,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setTipoPet(event.target.value)}
                                 id="inlineCheckbox4"
-                                value="opcao4"
+                                value="Gato"
                             />
                             <FaCat />
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -137,7 +138,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setTipoPet(event.target.value)}
                                 id="inlineCheckbox5"
-                                value="opcao5"
+                                value="Peixe"
                             />
                             <IoFish />
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -151,7 +152,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setTipoPet(event.target.value)}
                                 id="inlineCheckbox6"
-                                value="opcao6"
+                                value="Réptil"
                             />
                             <GiSandSnake />
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -165,7 +166,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setTipoPet(event.target.value)}
                                 id="inlineCheckbox7"
-                                value="opcao7"
+                                value="Roedor"
                             />
                             <GiSeatedMouse />
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -188,6 +189,9 @@ const CadastroProduto = () => {
                         <input
                             className="form-control item"
                             type='number'
+                            step={
+                                0.1
+                            }
                             require onChange={event => setPreco(event.target.value)}
                             placeholder="R$ 9.99"
                         />
@@ -231,18 +235,18 @@ const CadastroProduto = () => {
                     <div className="form-group">
                         <div className="dropdown"> <button className="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false"> <span>Categorias</span> <i className="fa fa-caret-down"></i> </button>
                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a className="dropdown-item">Acessórios</a></li>
-                                <li><a className="dropdown-item">Brinquedos</a></li>
-                                <li><a className="dropdown-item">Comida Natural</a></li>
-                                <li><a className="dropdown-item">Brinquedos</a></li>
-                                <li><a className="dropdown-item">Higiene e Beleza</a></li>
-                                <li><a className="dropdown-item">Medicamentos</a></li>
-                                <li><a className="dropdown-item">Petiscos</a></li>
-                                <li><a className="dropdown-item">Ração em Flocos</a></li>
-                                <li><a className="dropdown-item">Ração Medicamentosa</a></li>
-                                <li><a className="dropdown-item">Ração Seca</a></li>
-                                <li><a className="dropdown-item">Ração Úmida</a></li>
-                                <li><a className="dropdown-item">Roupas</a></li>
+                                <li><input className="dropdown-item" value="1" onChange={event => setCategoryID(event.target.value)} placeholder="Acessórios"></input></li>
+                                <li><input className="dropdown-item" value="2" onChange={event => setCategoryID(event.target.value)}placeholder="Brinquedos"></input></li>
+                                <li><input className="dropdown-item" value="3" onChange={event => setCategoryID(event.target.value)}placeholder="Comida Natural"></input></li>
+                                <li><input className="dropdown-item" value="4" onChange={event => setCategoryID(event.target.value)}placeholder="Brinquedos"></input></li>
+                                <li><input className="dropdown-item" value="5" onChange={event => setCategoryID(event.target.value)}placeholder="Higiene e Beleza"></input></li>
+                                <li><input className="dropdown-item" value="6" onChange={event => setCategoryID(event.target.value)}placeholder="Medicamentos"></input></li>
+                                <li><input className="dropdown-item" value="7" onChange={event => setCategoryID(event.target.value)}placeholder="Petiscos"></input></li>
+                                <li><input className="dropdown-item" value="8" onChange={event => setCategoryID(event.target.value)}placeholder="Ração em Flocos"></input></li>
+                                <li><input className="dropdown-item" value="9" onChange={event => setCategoryID(event.target.value)}placeholder="Ração Medicamentosa"></li></input></li>
+                                <li><input className="dropdown-item" value="10" onChange={event => setCategoryID(event.target.value)}placeholder="Ração Seca"></input></li>
+                                <li><input className="dropdown-item" value="11" onChange={event => setCategoryID(event.target.value)}placeholder="Ração Úmida"></input></li>
+                                <li><input type={text} className="dropdown-item" value="12" onChange={event => setCategoryID(event.target.value)}placeholder="Roupas"></input></li>
                             </ul>
                         </div>
                     </div>

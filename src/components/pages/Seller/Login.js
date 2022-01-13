@@ -8,6 +8,8 @@ import { GlobalContext } from '../../shared/Providers/Providers';
 
 
 const Login = () => {
+    window.localStorage.removeItem("companyID");
+    window.localStorage.removeItem("token");
 
     const[cnpj, setCnpj] = useState('');
     const[password, setPassword] = useState('');
@@ -26,7 +28,7 @@ const Login = () => {
 
         axios.post(`/auth/login-company`, login)
         .then(response =>{
-            const token = response.data.token;
+                const token = response.data.token;
                 const companyID = response.data.company.id;
                 console.log(companyID)
                 localStorage.setItem('companyID', companyID)
