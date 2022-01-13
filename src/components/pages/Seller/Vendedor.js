@@ -55,58 +55,58 @@ const CadastroVendedor = () => {
 
     return (
         <>
-            <div class="registration-form">
+            <div className="registration-form">
                 <form onSubmit={handleSubmit}>
                     <div className="form-group"> 
                         <img className="imgcad2" alt="" src= { Cadastro } />
                     </div>
                     
-                    <div class="form-group">
-                        <input type="text" require onChange={event => setCorporateName(event.target.value)} class="form-control item" id="razaoSocial" placeholder="Razão Social"/>
+                    <div className="form-group">
+                        <input type="text" require onChange={event => setCorporateName(event.target.value)} className="form-control item" id="razaoSocial" placeholder="Razão Social"/>
                     </div>
-                    <div class="form-group">
-                        <input type="text" require onChange={event => setUsername(event.target.value)} class="form-control item" id="nomeFantasia" placeholder="Nome Fantasia"/>
+                    <div className="form-group">
+                        <input type="text" require onChange={event => setUsername(event.target.value)} className="form-control item" id="nomeFantasia" placeholder="Nome Fantasia"/>
                     </div>
-                    <div class="form-group">
-                        <input type="password" require onChange={event => setPassword(event.target.value)} class="form-control item" id="password" placeholder="Senha"/>
+                    <div className="form-group">
+                        <input type="password" require onChange={event => setPassword(event.target.value)} className="form-control item" id="password" placeholder="Senha"/>
                     </div> 
-                    <div class="form-group">
-                        <input type="password" require onChange={event => setPasswordConfirmation(event.target.value)} class="form-control item" id="passwordConfirmation" placeholder="Confirmação de Senha"/>
+                    <div className="form-group">
+                        <input type="password" require onChange={event => setPasswordConfirmation(event.target.value)} className="form-control item" id="passwordConfirmation" placeholder="Confirmação de Senha"/>
                     </div>                   
-                    <div class="form-group">
-                        <input type="text" require onChange={event => setEmail(event.target.value)} class="form-control item" id="email" placeholder="E-mail"/>
+                    <div className="form-group">
+                        <input type="text" require onChange={event => setEmail(event.target.value)} className="form-control item" id="email" placeholder="E-mail"/>
                     </div>
-                    <div class="form-group">
-                        <input type="text" require onChange={event => setPhone(event.target.value)} class="form-control item" id="phone-number" placeholder="Nº de Telefone/Whatsapp"/>
+                    <div className="form-group">
+                        <input type="text" require onChange={event => setPhone(event.target.value)} className="form-control item" id="phone-number" placeholder="Nº de Telefone/Whatsapp"/>
                     </div>
                     
-                    <div class="form-group">
-                        <input type="text"  require onChange={event => setBirthday(event.target.value)}class="form-control item" id="birth-date" placeholder="Data de Nascimento"/>
+                    <div className="form-group">
+                        <input type="text"  require onChange={event => setBirthday(event.target.value)}className="form-control item" id="birth-date" placeholder="Data de Nascimento"/>
                     </div>
-                    <div class="form-group">
-                        <input type="text" require onChange={event => setCnpj(event.target.value)}class="form-control item" id="CNPJ" placeholder="CNPJ"/>
+                    <div className="form-group">
+                        <input type="text" require onChange={event => setCnpj(event.target.value)}className="form-control item" id="CNPJ" placeholder="CNPJ"/>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="inputAddress">Endereço</label>
-                        <input type="text" require onChange={event => setAddress1(event.target.value)}class="form-control" id="inputAddress" placeholder="Dog Street, nº 0"/>
+                        <input type="text" require onChange={event => setAddress1(event.target.value)}className="form-control" id="inputAddress" placeholder="Dog Street, nº 0"/>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="inputAddress2">Complemento</label>
-                        <input type="text" require onChange={event => setAddress2(event.target.value)}class="form-control" id="inputAddress2" placeholder="Casa, Apto, etc."/>
+                        <input type="text" require onChange={event => setAddress2(event.target.value)}className="form-control" id="inputAddress2" placeholder="Casa, Apto, etc."/>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                        <input type="text" require onChange={event => setCity(event.target.value)} class="form-control" id="inputCity" placeholder="Cidade"/>
+                    <div className="form-row">
+                        <div className="form-group col-md-6">
+                        <input type="text" require onChange={event => setCity(event.target.value)} className="form-control" id="inputCity" placeholder="Cidade"/>
                         </div>
-                        <div class="form-group col-md-6">
-                        <input type="text" require onChange={event => setState(event.target.value)} class="form-control" id="inputState" placeholder="Estado"/>
+                        <div className="form-group col-md-6">
+                        <input type="text" require onChange={event => setState(event.target.value)} className="form-control" id="inputState" placeholder="Estado"/>
                         </div>
-                        <div class="form-group col-md-4">
-                        <input type="text" require onChange={event => setCep(event.target.value)}class="form-control" id="inputCEP" placeholder="CEP"/>
+                        <div className="form-group col-md-4">
+                        <input type="text" require onChange={event => setCep(event.target.value)}className="form-control" id="inputCEP" placeholder="CEP"/>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <button type="submit" value='Enviar' class="btn btn-block create-account">Criar Conta</button>
+                    <div className="form-group">
+                        <button type="submit" value='Enviar' className="btn btn-block create-account">Criar Conta</button>
                     </div>
                 </form>
                 

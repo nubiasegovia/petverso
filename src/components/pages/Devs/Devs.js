@@ -9,66 +9,66 @@ const Devs = () => {
     return (
         <>
             <h1 className='destaque'>Desenvolvedores</h1>
-                <div class="container mx-auto mt-4">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="carddev">
-                    <img src="https://i.imgur.com/ZTkt4I5.jpg" class="carddev-img-top" alt="..."/>
-                    <div class="carddev-body">
-                        <h5 class="carddev-title">Juno</h5>
-                            <h6 class="carddev-subtitle mb-2 text-muted">FullStack</h6>
-                        <p class="carddev-text">Pequeno resumo sobre o juno...."</p>
-                            <a href="#" target="_blank" class="btndev mr-2"><i class="fas fa-link"></i> Linkedin</a>
-                        <a href="https://github.com/amorajuno" target="_blank" class="btndev "><i class="fab fa-github"></i> Github</a>
+                <div className="container mx-auto mt-4">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="carddev">
+                    <img src="https://i.imgur.com/ZTkt4I5.jpg" className="carddev-img-top" alt="..."/>
+                    <div className="carddev-body">
+                        <h5 className="carddev-title">Juno</h5>
+                            <h6 className="carddev-subtitle mb-2 text-muted">FullStack</h6>
+                        <p className="carddev-text">Pequeno resumo sobre o juno...."</p>
+                            <a href="#" target="_blank" className="btndev mr-2"><i className="fas fa-link"></i> Linkedin</a>
+                        <a href="https://github.com/amorajuno" target="_blank" className="btndev "><i className="fab fa-github"></i> Github</a>
                     </div>
                     </div>
                         </div>    
-                        <div class="col-md-4">
-                    <div class="carddev">
-                    <img src={ nubia } class="carddev-img-top" alt="..."/>
-                    <div class="carddev-body">
-                        <h5 class="carddev-title">Nubia Segovia</h5>
-                            <h6 class="carddev-subtitle mb-2 text-muted">FullStack</h6>
-                        <p class="carddev-text">Pequeno resumo da Nubs...</p>
-                        <a href="https://www.linkedin.com/in/nubiasegovia/" target="_blank" class="btndev  mr-2"><i class="fas fa-link"></i> Linkedin</a>
-                        <a href="https://github.com/niasegovia" target="_blank" class="btndev"><i class="fab fa-github"></i> Github</a>
+                        <div className="col-md-4">
+                    <div className="carddev">
+                    <img src={ nubia } className="carddev-img-top" alt="..."/>
+                    <div className="carddev-body">
+                        <h5 className="carddev-title">Nubia Segovia</h5>
+                            <h6 className="carddev-subtitle mb-2 text-muted">FullStack</h6>
+                        <p className="carddev-text">Pequeno resumo da Nubs...</p>
+                        <a href="https://www.linkedin.com/in/nubiasegovia/" target="_blank" className="btndev  mr-2"><i className="fas fa-link"></i> Linkedin</a>
+                        <a href="https://github.com/niasegovia" target="_blank" className="btndev"><i className="fab fa-github"></i> Github</a>
                     </div>
                     </div>
                         </div>    
-                            <div class="col-md-4">
-                    <div class="carddev">
-                    <img src={ steffany } class="carddev-img-top" alt="..."/>
-                    <div class="carddev-body">
-                        <h5 class="carddev-title">Steffany Sympson</h5>
-                            <h6 class="carddev-subtitle mb-2 text-muted">FullStack</h6>
-                        <p class="carddev-text">Dev com sede de aprendizado e apaixonada pelo mundo da programação, pronta para explorar o que esse o universo Tech tem a oferecer. Mãe do Zeus, Billy, Horus, Thor e Urubuzinho.</p>
-                        <a href="https://www.linkedin.com/in/steffany-sympson/" target="_blank" class="btndev mr-2"><i class="fas fa-link"></i> Linkedin</a>
-                        <a href="https://github.com/SteffanySympson" target="_blank" class="btndev "><i class="fab fa-github"></i> Github</a>
+                            <div className="col-md-4">
+                    <div className="carddev">
+                    <img src={ steffany } className="carddev-img-top" alt="..."/>
+                    <div className="carddev-body">
+                        <h5 className="carddev-title">Steffany Sympson</h5>
+                            <h6 className="carddev-subtitle mb-2 text-muted">FullStack</h6>
+                        <p className="carddev-text">Dev com sede de aprendizado e apaixonada pelo mundo da programação, pronta para explorar o que esse o universo Tech tem a oferecer. Mãe do Zeus, Billy, Horus, Thor e Urubuzinho.</p>
+                        <a href="https://www.linkedin.com/in/steffany-sympson/" target="_blank" className="btndev mr-2"><i className="fas fa-link"></i> Linkedin</a>
+                        <a href="https://github.com/SteffanySympson" target="_blank" className="btndev "><i className="fab fa-github"></i> Github</a>
                     </div>
                     </div>
                     </div>
                         
-                        <div class="col-md-4">
-                        <div class="carddev">
-                    <img src={fellipe} class="carddev-img-top" alt="..."/>
-                    <div class="carddev-body">
-                        <h5 class="carddev-title">Fellipe Leal</h5>
-                            <h6 class="carddev-subtitle mb-2 text-muted">FullStack</h6>
-                        <p class="carddev-text">Pequeno resumo do Lipe....</p>
-                        <a href="#" target="_blank" class="btndev mr-2"><i class="fas fa-link"></i> Linkedin</a>
-                        <a href="#" target="_blank" class="btndev"><i class="fab fa-github"></i> Github</a>
+                        <div className="col-md-4">
+                        <div className="carddev">
+                    <img src={fellipe} className="carddev-img-top" alt="..."/>
+                    <div className="carddev-body">
+                        <h5 className="carddev-title">Fellipe Leal</h5>
+                            <h6 className="carddev-subtitle mb-2 text-muted">FullStack</h6>
+                        <p className="carddev-text">Pequeno resumo do Lipe....</p>
+                        <a href="#" target="_blank" className="btndev mr-2"><i className="fas fa-link"></i> Linkedin</a>
+                        <a href="#" target="_blank" className="btndev"><i className="fab fa-github"></i> Github</a>
                     </div>
                     </div>
                         </div>    
-                        <div class="col-md-4">
-                    <div class="carddev">
-                    <img src={ jaqueline } class="carddev-img-top" alt="..."/>
-                    <div class="carddev-body">
-                        <h5 class="carddev-title">Jaqueline Pauxis</h5>
-                            <h6 class="carddev-subtitle mb-2 text-muted">FullStack</h6>
-                        <p class="carddev-text">Paraense, Teacher Coding, analista devops FullStack - Amante do direito e antropologia.</p>
-                        <a href="https://www.linkedin.com/in/jaquelinepauxis/" target="_blank" class="btndev mr-2"><i class="fas fa-link"></i> Linkedin</a>
-                        <a href="https://github.com/JaquelinePauxis" target="_blank" class="btndev"><i class="fab fa-github"></i> Github</a>
+                        <div className="col-md-4">
+                    <div className="carddev">
+                    <img src={ jaqueline } className="carddev-img-top" alt="..."/>
+                    <div className="carddev-body">
+                        <h5 className="carddev-title">Jaqueline Pauxis</h5>
+                            <h6 className="carddev-subtitle mb-2 text-muted">FullStack</h6>
+                        <p className="carddev-text">Paraense, Teacher Coding, analista devops FullStack - Amante do direito e antropologia.</p>
+                        <a href="https://www.linkedin.com/in/jaquelinepauxis/" target="_blank" className="btndev mr-2"><i className="fas fa-link"></i> Linkedin</a>
+                        <a href="https://github.com/JaquelinePauxis" target="_blank" className="btndev"><i className="fab fa-github"></i> Github</a>
                     </div>
                     
                 </div>
