@@ -14,7 +14,7 @@ function Card(props) {
     return (
                 <div className="card-itens" onClick={goToProductPage}>
                     <div className="product">
-                        <img src={props.imgUrl} alt={props.nome} />
+                        <img className="imgCard" src={props.imgUrl} alt={props.nome} />
                         <div className="details">
                             <span>{props.company}</span>
                             <h5>{props.nome}</h5>

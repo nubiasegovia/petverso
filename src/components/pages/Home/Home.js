@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './Home.css';
 import Carousel from './Carousel';
-import ProductList from '../../pages/ProductList/ProductList';
 import SilDog from '../../assets/sildog.png';
 import SilCat from '../../assets/silcat.png';
 import SilBird from '../../assets/silbird.png';
@@ -10,15 +10,35 @@ import SilHabit from '../../assets/silhabit.png';
 import SilRep from '../../assets/silrep.png';
 import SilMouse from '../../assets/silmouse.png';
 import HomeText from '../../assets/hometext.png';
-import Food from '../../assets/18.jpg';
-import Casinha from '../../assets/19.jpg';
-import Catfood from '../../assets/20.jpg';
-import DogHouse from '../../assets/21.jpg';
 import { FaCartPlus } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 
 const Home = () => {
+
+    const [products, setProducts] = useState([]);
+    const [mounted, setMounted] = useState(false);
+
+
+    
+    useEffect(() => {
+        
+        const getData = async () => {
+            await axios.get('/cat/13')
+                .then(response => {
+                    if (mounted) {
+                        setProducts(response.data)
+                    }
+                })
+        }
+        setMounted(true)
+        getData()
+    }, [ mounted])
+
+
+
+
+
     return (
         <>
             <div className="animals">
@@ -45,14 +65,14 @@ const Home = () => {
             <div>
                 <div className="card-itens">
                         <div className="product">
-                            {/* <img src={props.imgUrl} alt={props.nome} />
+                            <img src={products.imgUrl} alt={products.nome} />
                             <div className="details">
-                                <span>{props.company}</span>
-                                <h5>{props.nome}</h5>
-                                <h4>R$ {props.preco}</h4>
-                                <span>{props.restrictions}</span>
-                                <span>{props.quantity}</span>
-                            </div> */}
+                                <span>{products.company}</span>
+                                <h5>{products.nome}</h5>
+                                <h4>R$ {products.preco}</h4>
+                                <span>{products.restrictions}</span>
+                                <span>{products.quantity}</span>
+                            </div>
                             <div className="cart">
                                 <IconContext.Provider value={{ color: "#03AEA2", size:"1.4em", className: "cart-icon"}}>
                                 <a href="/"><FaCartPlus /></a>

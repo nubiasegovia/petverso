@@ -297,7 +297,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox5"
-                                value="5"
+                                value="13"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
