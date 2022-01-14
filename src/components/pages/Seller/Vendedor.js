@@ -28,9 +28,9 @@ const CadastroVendedor = () => {
         event.preventDefault();
 
         const user = {
-            corporateName: corporateName,
+            corporateName: username,
             email: email,
-            username: username,
+            username: corporateName,
             birthday:birthday,
             password: password,
             passwordConfirmation: passwordConfirmation,
