@@ -15,22 +15,22 @@ const Login = () => {
     
     const handleSubmit = event => {
         event.preventDefault();
-        setUser(true);
-
+        
         const login = {
             email: email,
             password: password
         }
-
+        
         axios.post(`/auth/login`, login)
-            .then(response => {
-                const token = response.data.token;
-                const id = response.data.user.id;
-                console.log(id)
-                localStorage.setItem('userID', id)
-                localStorage.setItem('token', token)
-                console.log(response)
-            })
+        .then(response => {
+            const token = response.data.token;
+            const id = response.data.user.id;
+            console.log(id)
+            localStorage.setItem('userID', id)
+            localStorage.setItem('token', token)
+            console.log(response)
+            setUser(true);
+        })
         navigate("/products/all");
     }
 

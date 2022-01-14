@@ -5,48 +5,57 @@ import { FaShoppingCart } from "react-icons/fa";
 
 
 function ShopCart() {
-    let [products, setProducts] = useState([]);
+
+    const [mounted, setMounted] = useState(false);
+    const [loaded, setLoaded] = useState(false);
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const userID = localStorage.getItem('userID');
+        const getCart = async () => axios.get(`/cart/user/${userID}`)
+            .then(response => {
+                
+                console.log('oi vei', response)
+                setLoaded(true)
+                setProducts(response.data.productList)
+            })
+            if(mounted){
+                getCart();
+            }
+            setMounted(true)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
 
-    const userID = localStorage.getItem('userID');
 
-    const getCart = async () => axios.get(`/cart/user/${userID}`).then(response => {
-        setProducts(response.data)
 
-    })
 
-    console.log(products)
-    let list = products.productList;
-    console.log(list)
+    
 
 
     // let productList = cart.productList
 
-    useEffect(() => {
-
-        getCart();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
     return (
+
         <div className="shopwrapper">
             <div className="shopcart-container">
                 <div className="shopcart-title">
                     <h2><FaShoppingCart /> Carrinho de compras</h2>
                 </div>
-                {
-                this.products.map((product) =>(
+                {loaded ?
+                    products.length && products.map((product) => (
 
-                    <div className="products">
-                        <img src='' alt="Foto de NomeProduto" />
-                        <div className="product-name"></div>
-                        <div className="product-price">R$ 0,00</div>
-                        <div className={(product.productList.productQnty)}>
-                            <div className="add-remove"></div>
-                            <div className="delete-btn">Excluir</div>
+                        <div className="products">
+                            <img src='' alt="Foto de NomeProduto" />
+                            <div className="product-name">{product.productID}</div>
+                            <div className="product-price">R$ {product.totalPrice}</div>
+                            <div className={product.productQnty}>
+                                <div className="add-remove"></div>
+                                <div className="delete-btn">Excluir</div>
+                            </div>
                         </div>
-                    </div>
-                ))
-                }; 
+                    )) : <span>carregando</span>
+                }
 
 
 
