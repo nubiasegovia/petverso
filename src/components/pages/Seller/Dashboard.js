@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLocation } from 'react';
+import React, { useState, useEffect } from 'react';
 import Dogfood from '../../assets/dogfood.jpg';
 import axios from 'axios';
 import './Dashboard.css';
@@ -11,26 +11,27 @@ const DashboardSeller = () => {
     const [company, setCompany] = useState([]);
     
     const [mounted, setMounted] = useState(false);
-  
-    const getData = async () => {
-        await axios.get(`/company/${id}`)
-            .then(response => {
-                if (mounted) {
-                    setCompany(response.data)
-                }
-            })
-    }
+    
+    const token = localStorage.getItem('token')
 
+    
     useEffect(() => {
+        const getData = async () => {
+            await axios.get(`/company/${id}`, { 'Authorization' : `Bearer ${token}`})
+                .then(response => {
+                    if (mounted) {
+                        setCompany(response.data)
+                    }
+                })
+        }
         setMounted(true)
         getData()
-    }, [mounted])
+    }, [id, mounted, token])
 
 
     return (
         <>
             <div>
-                 
             
                 <div className="cardDashboardSeller">
 

@@ -28,11 +28,11 @@ const CadastroProduto = () => {
     const [quantidade, setQuantidade] = useState('')
     const [categoryID, setCategoryID] = useState('')
 
+    const companyID = localStorage.getItem('companyID')
+    const token = localStorage.getItem('token')
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const companyID = localStorage.getItem('companyID')
-        const token = localStorage.getItem('token')
 
         const newProduct = {
             name: nomeProduto,
@@ -42,14 +42,16 @@ const CadastroProduto = () => {
             description: descricao,
             contains: conteudo,
             restrictions: restricao,
-            quantity: quantidade,
+            quantity: parseInt(quantidade),
             companyID: companyID,
             categoryID: parseInt(categoryID),
         }
+        const me = await axios.get("/auth/me");
+        console.log(me);
 
 
         const response = await axios
-            .post("/product", newProduct, {"Authorization" : `Bearer ${token}`})
+            .post("/product", newProduct, { 'Authorization' : `Bearer ${token}`})
             .then((res) => {
                 console.log(res);
                 console.log(response.data);
@@ -240,7 +242,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox1"
-                                value="opcao1"
+                                value="1"
                             />
                             
                             <label className="form-check-label" for="inlineCheck1">
@@ -253,9 +255,9 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox2"
-                                value="opcao2"
+                                value="2"
                             />
-                           
+
                             <label className="form-check-label" for="inlineCheckbox1">
                                 {" "}
                                 Brinquedos
@@ -267,7 +269,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox3"
-                                value="opcao3"
+                                value="3"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -281,7 +283,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox4"
-                                value="opcao4"
+                                value="4"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -295,7 +297,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox5"
-                                value="opcao5"
+                                value="5"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -309,7 +311,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox6"
-                                value="opcao6"
+                                value="6"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -323,7 +325,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox7"
-                                value="opcao7"
+                                value="7"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -338,7 +340,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox7"
-                                value="opcao7"
+                                value="8"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -353,7 +355,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox7"
-                                value="opcao7"
+                                value="9"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -368,7 +370,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox7"
-                                value="opcao7"
+                                value="10"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -383,7 +385,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox7"
-                                value="opcao7"
+                                value="11"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
@@ -398,7 +400,7 @@ const CadastroProduto = () => {
                                 type="checkbox"
                                 require onChange={event => setCategoryID(event.target.value)}
                                 id="inlineCheckbox7"
-                                value="opcao7"
+                                value="12"
                             />
                             
                             <label className="form-check-label" for="inlineCheckbox1">
