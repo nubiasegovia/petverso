@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div className="menus">
                     <a href="/products/all" className='menu1'> Produtos </a>
                     <a href="/iniciativa"className='menu2'> Nossa Iniciativa </a>
-                    <a target="_blank" href="/"className='menu3'> PetDicas </a>
+                    <a target="_blank" href="/petdicas"className='menu3'> PetDicas </a>
                 </div>    
                 { 
                     user

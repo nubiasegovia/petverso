@@ -33,7 +33,16 @@
 
 .parar{
     text-align: center;
-    margin-left: 15px;
+    margin: 20px 40px 20px 40px;
+    size: 55px;
+    color: #000;
 }
 
+.parar2{
+  text-align: center;
+  margin: 20px 40px 20px 40px;
+  size: 60px;
+  color: #000;
+  font-weight: bolder;
+}
 

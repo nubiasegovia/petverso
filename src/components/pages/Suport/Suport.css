@@ -1,0 +1,61 @@
+.suportPet{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.suportSorry{
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+    color: rgb(241, 94, 26);
+    margin-top: 20px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 20px 0px 20px 0px;
+}
+
+.Paw{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin: 10px 10px 20px 10px;
+}
+
+.treinoSorry{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+.treino{
+    
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0px 20px 0px;
+    border-radius: 10%;
+}
+
+.treino:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

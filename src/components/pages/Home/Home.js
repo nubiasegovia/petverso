@@ -10,7 +10,12 @@ import SilHabit from '../../assets/silhabit.png';
 import SilRep from '../../assets/silrep.png';
 import SilMouse from '../../assets/silmouse.png';
 import HomeText from '../../assets/hometext.png';
-
+import Food from '../../assets/18.jpg';
+import Casinha from '../../assets/19.jpg';
+import Catfood from '../../assets/20.jpg';
+import DogHouse from '../../assets/21.jpg';
+import { FaCartPlus } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 
 const Home = () => {
@@ -37,9 +42,25 @@ const Home = () => {
             <Carousel/>
             <br/>
             <h1 className="destaque">Produtos em Destaque</h1>
-            
-            
-           <ProductList/>
+            <div>
+                <div className="card-itens">
+                        <div className="product">
+                            {/* <img src={props.imgUrl} alt={props.nome} />
+                            <div className="details">
+                                <span>{props.company}</span>
+                                <h5>{props.nome}</h5>
+                                <h4>R$ {props.preco}</h4>
+                                <span>{props.restrictions}</span>
+                                <span>{props.quantity}</span>
+                            </div> */}
+                            <div className="cart">
+                                <IconContext.Provider value={{ color: "#03AEA2", size:"1.4em", className: "cart-icon"}}>
+                                <a href="/"><FaCartPlus /></a>
+                                </IconContext.Provider>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </>
     )
 }

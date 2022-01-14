@@ -232,22 +232,179 @@ const CadastroProduto = () => {
                             placeholder="Quantidade em estoque"
                         />
                     </div>
-                    <div className="form-group">
-                        <div className="dropdown"> <button className="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false"> <span>Categorias</span> <i className="fa fa-caret-down"></i> </button>
-                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><input className="dropdown-item" value="1" onChange={event => setCategoryID(event.target.value)} placeholder="Acessórios"></input></li>
-                                <li><input className="dropdown-item" value="2" onChange={event => setCategoryID(event.target.value)}placeholder="Brinquedos"></input></li>
-                                <li><input className="dropdown-item" value="3" onChange={event => setCategoryID(event.target.value)}placeholder="Comida Natural"></input></li>
-                                <li><input className="dropdown-item" value="4" onChange={event => setCategoryID(event.target.value)}placeholder="Brinquedos"></input></li>
-                                <li><input className="dropdown-item" value="5" onChange={event => setCategoryID(event.target.value)}placeholder="Higiene e Beleza"></input></li>
-                                <li><input className="dropdown-item" value="6" onChange={event => setCategoryID(event.target.value)}placeholder="Medicamentos"></input></li>
-                                <li><input className="dropdown-item" value="7" onChange={event => setCategoryID(event.target.value)}placeholder="Petiscos"></input></li>
-                                <li><input className="dropdown-item" value="8" onChange={event => setCategoryID(event.target.value)}placeholder="Ração em Flocos"></input></li>
-                                <li><input className="dropdown-item" value="9" onChange={event => setCategoryID(event.target.value)}placeholder="Ração Medicamentosa"></li></input></li>
-                                <li><input className="dropdown-item" value="10" onChange={event => setCategoryID(event.target.value)}placeholder="Ração Seca"></input></li>
-                                <li><input className="dropdown-item" value="11" onChange={event => setCategoryID(event.target.value)}placeholder="Ração Úmida"></input></li>
-                                <li><input type={text} className="dropdown-item" value="12" onChange={event => setCategoryID(event.target.value)}placeholder="Roupas"></input></li>
-                            </ul>
+
+                    <div className="categoria">
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox1"
+                                value="opcao1"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheck1">
+                                Acessórios
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox2"
+                                value="opcao2"
+                            />
+                           
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Brinquedos
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox3"
+                                value="opcao3"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Comida Natural
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox4"
+                                value="opcao4"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Brinquedos
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox5"
+                                value="opcao5"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Higiene e Beleza
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox6"
+                                value="opcao6"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Medicamentos
+                            </label>
+                        </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Petiscos
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Ração em Flocos
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Ração Medicamentosa
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Ração Seca
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Ração Úmida
+                            </label>
+                        </div>
+
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="checkbox"
+                                require onChange={event => setCategoryID(event.target.value)}
+                                id="inlineCheckbox7"
+                                value="opcao7"
+                            />
+                            
+                            <label className="form-check-label" for="inlineCheckbox1">
+                                {" "}
+                                Roupas
+                            </label>
                         </div>
                     </div>
 

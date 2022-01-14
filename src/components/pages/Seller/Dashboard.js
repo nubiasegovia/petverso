@@ -1,22 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect, useLocation } from 'react';
 import Dogfood from '../../assets/dogfood.jpg';
-
+import axios from 'axios';
 import './Dashboard.css';
 
 const DashboardSeller = () => {
 
+    
+    const id = localStorage.getItem('companyID');
+    
+    const [company, setCompany] = useState([]);
+    
+    const [mounted, setMounted] = useState(false);
+  
+    const getData = async () => {
+        await axios.get(`/company/${id}`)
+            .then(response => {
+                if (mounted) {
+                    setCompany(response.data)
+                }
+            })
+    }
+
+    useEffect(() => {
+        setMounted(true)
+        getData()
+    }, [mounted])
+
+
     return (
         <>
             <div>
-                {/* <ol className="breadcrumb">
-                    <li className="breadcrumb-item active "><a >Empresa PetVerso</a></li>
-                    <li className="breadcrumb-item"><a href="#">Produtos</a></li>
-                </ol>   */}
-                
+                 
             
                 <div className="cardDashboardSeller">
 
                         <h3 className='destaque'>Seus Produtos Cadastrados</h3>
+                        <br />
+                        <h2>{company.corporateName}</h2>
+                        <br />
+                        <a href="/cadastro/product"  className="btn btn-primary rounded"> Novo Produto</a>
                         <br />
                         <div class="cardDash">
                             <img src={Dogfood} class="card-img-top" alt="..."/>
