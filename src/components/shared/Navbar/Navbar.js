@@ -22,7 +22,7 @@ const Navbar = () => {
     
     return(
         <>
-           <div className="bar">
+            <div className="bar">
                 <a href="/"> <img  className="logo-topo" src={PetLogo} alt="Logo PetVerso" /></a>
                 
                 <div className="menus">
