@@ -24,7 +24,7 @@ const Home = () => {
     useEffect(() => {
         
         const getData = async () => {
-            await axios.get('/cat/13')
+            await axios.get('/product/cat/13')
                 .then(response => {
                     if (mounted) {
                         setProducts(response.data)
