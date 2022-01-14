@@ -288,7 +288,7 @@ const CadastroProduto = () => {
                             
                             <label className="form-check-label" for="inlineCheckbox1">
                                 {" "}
-                                Brinquedos
+                                Brinquedos sem som
                             </label>
                         </div>
                         <div className="form-check form-check-inline">

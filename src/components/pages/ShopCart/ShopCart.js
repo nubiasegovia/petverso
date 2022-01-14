@@ -1,39 +1,41 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./ShopCart.css";
 import { FaShoppingCart } from "react-icons/fa";
+import { GlobalContext } from "../../shared/Providers/Providers";
 
 
 function ShopCart() {
 
+    const {user} = useContext(GlobalContext);
+    console.log(user)
     const [mounted, setMounted] = useState(false);
     const [loaded, setLoaded] = useState(false);
     const [products, setProducts] = useState([]);
-
+    const [token, setToken] = useState(false);
+    
+    
     useEffect(() => {
         const userID = localStorage.getItem('userID');
         const getCart = async () => axios.get(`/cart/user/${userID}`)
-            .then(response => {
-                
-                console.log('oi vei', response)
-                setLoaded(true)
-                setProducts(response.data.productList)
-            })
-            if(mounted){
-                getCart();
-            }
+        .then(response => {
+            
+            console.log('oi vei', response)
+            setLoaded(true)
+            setProducts(response.data.productList)
+        })
+        if(mounted){
+            getCart();
+        }
+        if (localStorage.getItem("token")) {
+            setToken(true);
+        }
             setMounted(true)
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [localStorage.getItem("token"), token]);
 
 
 
-
-
-    
-
-
-    // let productList = cart.productList
 
     return (
 
@@ -47,7 +49,7 @@ function ShopCart() {
 
                         <div className="products">
                             <img src='' alt="Foto de NomeProduto" />
-                            <div className="product-name">{product.productID}</div>
+                            <div className="product-name">{product.productName}</div>
                             <div className="product-price">R$ {product.totalPrice}</div>
                             <div className={product.productQnty}>
                                 <div className="add-remove"></div>

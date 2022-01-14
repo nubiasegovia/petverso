@@ -5,23 +5,25 @@ import './ProductList.css';
 
 
 function ProductList() {
+
     const [products, setProducts] = useState([]);
     const [mounted, setMounted] = useState(false);
 
 
-    const getData = async () => {
-        await axios.get('/product/all')
-            .then(response => {
-                if (mounted) {
-                    setProducts(response.data)
-                }
-            })
-    }
-
+    
     useEffect(() => {
+        
+        const getData = async () => {
+            await axios.get('/product/all')
+                .then(response => {
+                    if (mounted) {
+                        setProducts(response.data)
+                    }
+                })
+        }
         setMounted(true)
         getData()
-    }, [mounted])
+    }, [ mounted])
 
     return (
         <>
