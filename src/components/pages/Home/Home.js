@@ -12,30 +12,37 @@ import SilMouse from '../../assets/silmouse.png';
 import HomeText from '../../assets/hometext.png';
 import { FaCartPlus } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import Card from "../../structure/Card/Card";
+
 
 
 const Home = () => {
 
     const [products, setProducts] = useState([]);
     const [mounted, setMounted] = useState(false);
+    const [loaded, setLoaded] = useState(false);
 
 
-    
+
+
     useEffect(() => {
-        
+
         const getData = async () => {
             await axios.get('/product/cat/13')
                 .then(response => {
                     if (mounted) {
                         setProducts(response.data)
+                        setLoaded(true)
+
                     }
                 })
         }
         setMounted(true)
         getData()
-    }, [ mounted])
+    }, [mounted])
 
     console.log(products)
+
 
 
 
@@ -43,44 +50,61 @@ const Home = () => {
         <>
             <div className="animals">
                 <div>
-                    <img className="Sil" src = {SilDog}/>
-                    <img className="Sil" src = {SilMouse}/>
-                    <img className="Sil" src = {SilRep}/>
-                    <img className="Sil" src = {SilHabit}/>
-                    <img className="Sil" src = {SilFish}/>
-                    <img className="Sil" src = {SilBird}/>
-                    <img className="Sil" src = {SilCat}/>
+                    <img className="Sil" src={SilDog} />
+                    <img className="Sil" src={SilMouse} />
+                    <img className="Sil" src={SilRep} />
+                    <img className="Sil" src={SilHabit} />
+                    <img className="Sil" src={SilFish} />
+                    <img className="Sil" src={SilBird} />
+                    <img className="Sil" src={SilCat} />
                 </div>
                 <br />
-                <img className="Sil2" src = {HomeText}/>
+                <img className="Sil2" src={HomeText} />
                 <h5 className="destaque">Ajudando pequenas empresas e produtores a dar o suporte que todo tutor de pet precisa nessa incrivel jornada!</h5>
                 <br />
                 <br />
-                
+
 
             </div>
-            <Carousel/>
-            <br/>
-            <h1 className="destaque">Produtos em Destaque</h1>
+            <Carousel />
+            <br />
+            {/* <h1 className="destaque">Produtos em Destaque</h1>
             <div>
-                {/* <div className="card-itens">
-                        <div className="product">
-                            <img src={products.} alt={products.nome} />
-                            <div className="details">
-                                <span>{products.company}</span>
-                                <h5>{products.nome}</h5>
-                                <h4>R$ {products.preco}</h4>
-                                <span>{products.restrictions}</span>
-                                <span>{products.quantity}</span>
-                            </div>
-                            <div className="cart">
-                                <IconContext.Provider value={{ color: "#03AEA2", size:"1.4em", className: "cart-icon"}}>
+                <div className="card-itens">
+
+                    <div className="list-container">
+                        {
+
+                            loaded ?
+                                products.length && products.map(product => (
+                                    <Card
+                                        key={product.id}
+                                        id={product.id}
+                                        nome={product.name}
+                                        preco={product.price}
+                                        imgUrl={product.imgUrl}
+                                    />
+                                )) : <span>carregando</span>
+                        }
+                        <div className="cart">
+                            <IconContext.Provider value={{ color: "#03AEA2", size: "1.4em", className: "cart-icon" }}>
                                 <a href="/"><FaCartPlus /></a>
-                                </IconContext.Provider>
-                            </div>
+                            </IconContext.Provider>
                         </div>
                     </div> */}
-            </div>
+                    {/* <div className="product"> */}
+                    {/* <img src={products.products.imgUrl} alt={products.products.name} />
+                            <div className="details">
+                                <span>{products.products.company}</span>
+                                <h5>{products.products.name}</h5>
+                                <h4>R$ {products.products.price}</h4>
+                                <span>{products.products.restrictions}</span>
+                                <span>{products.products.quantity}</span>
+                            </div> */}
+
+                    {/* </div> */}
+                {/* </div>
+            </div> */}
         </>
     )
 }
